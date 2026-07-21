@@ -1,0 +1,10 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+# Redirects and headers are added in Phase 7, before the domain cutover.
+# Until then the site is served only from its *.netlify.app preview URL and
+# liminal.coach continues to be served by Webflow.

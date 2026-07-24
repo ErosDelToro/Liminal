@@ -36,7 +36,7 @@ const isActive = (href: string) => (href === "/" ? path === "/" : path.startsWit
           class="flex items-center gap-1 font-heading text-sm text-blueberry transition-colors hover:text-apricot"
           aria-haspopup="true"
         >
-          Coaching
+          Services
           <svg class="h-3 w-3" viewBox="0 0 12 12" fill="none" aria-hidden="true">
             <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
           </svg>
@@ -90,7 +90,7 @@ const isActive = (href: string) => (href === "/" ? path === "/" : path.startsWit
         ))
       }
       <div class="mt-1 border-t border-line pt-2">
-        <p class="px-2 pb-1 eyebrow text-blueberry">Coaching</p>
+        <p class="px-2 pb-1 eyebrow text-blueberry">Services</p>
         {
           SERVICE_LINKS.map((link) => (
             <a href={link.href} class="rounded-md px-2 py-2 font-heading text-sm text-ink hover:bg-paper-warm block">

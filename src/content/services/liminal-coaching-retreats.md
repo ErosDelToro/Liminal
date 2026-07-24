@@ -1,5 +1,5 @@
 ---
-title: Liminal Coaching Retreats
+title: Liminal Odyssey Retreat
 order: 5
 intro: >-
   A Liminal Coaching Retreat is more than just a getaway—it's a transformative

@@ -1,0 +1,121 @@
+---
+import Base from "../layouts/Base.astro";
+import Cta from "../components/Cta.astro";
+import { Image } from "astro:assets";
+import { getImage } from "../lib/images";
+
+const portrait = getImage("coaching-8902332");
+const img1 = getImage("coaching-8901434");
+const img2 = getImage("coaching-8901565");
+
+// Mehdi's methodology pillars, from the live About page.
+const pillars = [
+  {
+    title: "A Global Perspective on Human Potential",
+    body: "Born in Morocco, raised in Sweden, educated in France, and working across the United States—two decades of life across cultures shapes how Mehdi understands leadership, adaptation, and what it takes for a person to reinvent themselves.",
+  },
+  {
+    title: "Holistic and Bioecological Perspective",
+    body: "Coaching addresses the whole person—health, relationships, values, resources, and aspirations—within both personal and professional contexts, because no transition happens in just one part of a life.",
+  },
+  {
+    title: "Evidence-Based & Experience-Informed",
+    body: "Grounded in graduate business education, doctoral research in organizational psychology, and NLP certification, the work combines mindset-mastery techniques with evidence-based strategy.",
+  },
+  {
+    title: "Technology for Transformational Growth",
+    body: "Digital tools and analytics support the work between sessions, helping translate insight into consistent, measurable change.",
+  },
+];
+---
+
+<Base
+  title="About Mehdi Moutahir | Liminal Coaching"
+  description="Mehdi Moutahir is a strategic architect for bold transitions—helping ambitious people convert change into reinvention, purpose, and meaningful impact."
+>
+  <!-- Hero -->
+  <section class="mx-auto max-w-6xl px-6 pt-16 md:pt-24">
+    <p class="eyebrow">About</p>
+    <h1 class="mt-4 max-w-4xl">Strategic Architect for Bold Transitions</h1>
+    <p class="mt-6 max-w-2xl text-lg text-ink-soft">
+      I empower ambitious leaders, entrepreneurs, and high-performing individuals
+      to not only navigate change but convert it into a catalyst for reinvention,
+      purpose, and meaningful impact.
+    </p>
+  </section>
+
+  <!-- Intro + portrait -->
+  <section class="mx-auto max-w-6xl px-6 py-16">
+    <div class="grid items-center gap-12 lg:grid-cols-2">
+      {
+        portrait && (
+          <Image
+            src={portrait}
+            alt="Mehdi Moutahir"
+            class="w-full rounded-2xl object-cover shadow-sm"
+            widths={[400, 800]}
+            sizes="(max-width: 1024px) 100vw, 500px"
+          />
+        )
+      }
+      <div>
+        <h2 class="text-3xl">Change is inevitable, but growth is intentional</h2>
+        <div class="mt-6 space-y-4 text-ink-soft">
+          <p>
+            Mehdi embodies the art of living with purpose and intention. Drawing
+            on his diverse experiences in education, entrepreneurship,
+            psychology, and personal development, he guides individuals toward
+            lives of authentic fulfilment.
+          </p>
+          <p>
+            Drawing on the Japanese concept of ikigai, he helps clients create
+            harmony between their passions, talents, and contributions while
+            maintaining balance across all life dimensions. Through personalized
+            coaching, Mehdi empowers people to define success on their own
+            terms—nurturing meaningful work alongside rich personal experiences,
+            relationships, and community connections.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Methodology pillars -->
+  <section class="bg-paper-warm">
+    <div class="mx-auto max-w-6xl px-6 py-20">
+      <p class="eyebrow">Approach</p>
+      <h2 class="mt-3 max-w-2xl">A holistic, evidence-based practice</h2>
+      <div class="mt-10 grid gap-x-12 gap-y-10 md:grid-cols-2">
+        {
+          pillars.map((p) => (
+            <div>
+              <h3 class="text-xl text-ink">{p.title}</h3>
+              <p class="mt-2 text-ink-soft">{p.body}</p>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- Twenty years band -->
+  <section class="mx-auto max-w-6xl px-6 py-20">
+    <div class="grid items-center gap-12 lg:grid-cols-2">
+      <div class="order-2 lg:order-1">
+        <h2 class="text-3xl">Two decades, four countries, one throughline</h2>
+        <p class="mt-6 text-ink-soft">
+          Across twenty years of professional work spanning Morocco, Sweden,
+          France, and the United States, one question has stayed constant: what
+          allows a person to move through profound change and come out more
+          themselves, not less? That question is the heart of every engagement.
+        </p>
+      </div>
+      <div class="order-1 grid grid-cols-2 gap-4 lg:order-2">
+        {img1 && <Image src={img1} alt="" class="w-full rounded-xl object-cover" widths={[300, 600]} sizes="250px" />}
+        {img2 && <Image src={img2} alt="" class="mt-8 w-full rounded-xl object-cover" widths={[300, 600]} sizes="250px" />}
+      </div>
+    </div>
+  </section>
+
+  <Cta />
+</Base>

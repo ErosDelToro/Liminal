@@ -19,8 +19,8 @@ export const CONTACT_EMAIL = "info.liminal.coach@gmail.com";
 export const SITE_TAGLINE =
   "Unlock your potential at Liminal Coaching. Dive into a personalized journey that blends psychological insights and practical strategies, designed to align your aspirations.";
 
-// Primary navigation. The old site had a dead "Start-up coaching" item that
-// pointed at the retreats page — dropped here on purpose.
+// Primary navigation. Retreats (the Liminal Odyssey) stays a top-level item;
+// the other offerings live in the Services dropdown below.
 export const NAV_LINKS = [
   { label: "Home", href: "/" },
   { label: "About Us", href: "/about" },
@@ -28,10 +28,11 @@ export const NAV_LINKS = [
   { label: "Blog", href: "/blog" },
 ];
 
-// Services dropdown in the header.
+// Services dropdown in the header — the real offering from the live homepage
+// (Retreats appears as its own top-level nav item, so it's not repeated here).
 export const SERVICE_LINKS = [
-  { label: "Growth coaching", href: "/service/growth-coaching" },
-  { label: "Sales coaching", href: "/service/sales-coaching" },
-  { label: "Marketing coaching", href: "/service/marketing-coaching" },
-  { label: "Leadership coaching", href: "/service/leadership-coaching" },
+  { label: "Transition Coaching", href: "/service/transition-coaching" },
+  { label: "Executive Coaching", href: "/service/executive-coaching" },
+  { label: "Speaking", href: "/service/speaking" },
+  { label: "Workshops", href: "/service/workshops" },
 ];

@@ -1,46 +1,56 @@
 ---
 title: Liminal Ascent
 order: 2
-tagline: The breakthrough retreat
+tagline: The endurance retreat
 intro: >-
-  For those ready to rise to a new level. Liminal Ascent is about meeting a
-  meaningful challenge, moving through resistance, and discovering the strength
-  that lives on the other side of your comfort zone.
-location: ""
+  A physical and mental endurance retreat in the shadow of the Matterhorn. A
+  small group takes on the Ultraks Zermatt trail race and trains toward the
+  ascent of the Matterhorn itself—not to conquer a summit, but to discover what
+  you're made of in the attempt.
+location: Zermatt, Switzerland
 dates: ""
-heroImage: coaching-8902332
-seoTitle: Liminal Ascent Retreat | Liminal Coaching
+heroImage: ascent-matterhorn
+seoTitle: Liminal Ascent Retreat — Zermatt, Switzerland | Liminal Coaching
 seoDescription: >-
-  A breakthrough retreat about meeting challenge, moving through resistance, and
-  rising to a new level of capability and confidence.
-draftCopy: true
+  A physical and mental endurance retreat in Zermatt—taking on the Ultraks trail
+  race and the Matterhorn ascent to discover what you're made of, in the body.
+draftCopy: false
 highlights:
-  - title: Meet a meaningful challenge
+  - title: The Ultraks Zermatt trail race
     description: >-
-      Growth rarely comes from comfort. The Ascent is built around a shared
-      challenge that asks something real of you—and shows you what you're
-      capable of.
-  - title: Move through resistance
+      Together the group takes on Ultraks, the demanding alpine trail race
+      through the mountains above Zermatt—a shared crucible of effort and grit.
+  - title: Toward the Matterhorn
     description: >-
-      With coaching and reflection, we work with the fear and hesitation that
-      surface at the edge of your capacity, turning them into momentum.
-  - title: Strength you can carry home
+      We prepare to ascend one of the most iconic mountains on earth, training
+      body and mind for the reality of the climb.
+  - title: Not the summit—the attempt
     description: >-
-      The confidence earned on the ascent isn't left on the mountain—it becomes
-      a resource you draw on long after the retreat ends.
-  - title: Rise alongside others
+      Success here isn't crossing a finish line or standing on a peak. It's what
+      you learn about yourself in the effort of trying.
+  - title: Knowledge in the body
     description: >-
-      There's a particular bond formed when people take on something demanding
-      together. You'll ascend as part of a group that has your back.
+      This retreat is embodied, not conceptual. Insight arrives through breath,
+      muscle, altitude, and fatigue—lessons you feel rather than think.
+  - title: Meeting your limits
+    description: >-
+      At the edge of physical and mental capacity, the usual defences fall away
+      and something truer is revealed. We go there deliberately, and together.
+  - title: A small, committed group
+    description: >-
+      Ascent is intentionally small. You'll be part of a tight group that
+      trains, struggles, and rises alongside you.
 ---
 
-Liminal Ascent is for the moment you know you're capable of more but haven't yet
-found the conditions to prove it. Structured around a meaningful shared
-challenge, the retreat blends physical or symbolic effort with deep coaching, so
-the lessons are felt in the body as well as understood in the mind.
+Liminal Ascent is the most physical of our retreats—and deliberately so. Set in
+Zermatt beneath the Matterhorn, it brings a small group together to take on the
+Ultraks trail race and to prepare for the mountain's ascent. The terrain is real,
+the effort is real, and so is what it reveals.
 
-You'll leave with more than a memory—you'll leave with evidence of your own
-resilience, and a clearer sense of the heights you're ready to reach for next.
+This is not about conquering. It's about embodiment: discovering that the things
+we usually work out in our heads are more honestly answered in the body, at
+altitude, at the edge of what we thought we could do. Whether or not you finish
+the race or reach the summit, you'll come away knowing something about yourself
+that can't be learned any other way.
 
-_Draft description — location, dates, and the specifics of the Ascent experience
-to be confirmed._
+_Dates for the next Zermatt retreat to be confirmed._

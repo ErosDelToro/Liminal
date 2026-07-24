@@ -17,10 +17,16 @@ const posts = (await getCollection("posts"))
   .sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime())
   .slice(0, 3);
 
-const partners = ["RIF", "IGT", "Economic Progress Institute", "Global Giving", "Bank of America"];
+const partners = [
+  { name: "RIF", logo: "/images/partners/rif.png" },
+  { name: "IGT", logo: "/images/partners/igt.webp" },
+  { name: "Economic Progress Institute", logo: "/images/partners/epi.png" },
+  { name: "Global Giving", logo: "/images/partners/global-giving.png" },
+  { name: "Bank of America", logo: "/images/partners/bank-of-america.png" },
+];
 
-const heroImg = getImage("coaching-8901687");
-const aboutImg = getImage("coaching-8902456");
+const heroImg = getImage("hero");
+const aboutImg = getImage("mehdi-portrait");
 
 const testimonials = [
   {
@@ -28,24 +34,28 @@ const testimonials = [
       "Mehdi holds a space with equal parts gravitas, humor, and empathy. He made sure that our group got the theoretical and academic content on psychological safety that undergirds his presentation while also making sure we had practical information we could use in our work and daily life. He is keenly aware of the energy in the room and is responsive to it.",
     name: "Rodney Eric Lopez",
     title: "CEO",
+    avatar: getImage("client-rodney"),
   },
   {
     quote:
       "I left the session energized, informed and with the tools to analyze and adjust a range of mental states and situations. Mehdi brings intelligence and experience, but more importantly, he brings authenticity.",
     name: "Stacy Jones",
     title: "Professor",
+    avatar: getImage("client-stacy"),
   },
   {
     quote:
       "Through his coaching I have learned to embrace and appreciate life's transitions, make peace with the imposter syndrome, and become a creative leader while optimizing the strengths of my team. Mehdi has given me the confidence to design the life that supports my values.",
     name: "Weayonnoh Nelson-Davies",
     title: "Executive Director",
+    avatar: getImage("client-weayonnoh"),
   },
   {
     quote:
       "Mehdi is an excellent facilitator and storyteller. I loved how he weaved personal stories into his presentation which was grounded in research. He has a calm, clear manner of presenting content that will resonate with a diverse group.",
     name: "Kilah Walters-Clinton",
     title: "Director",
+    avatar: getImage("client-kilah"),
   },
 ];
 ---
@@ -91,8 +101,19 @@ const testimonials = [
   <!-- Partners -->
   <section class="mx-auto max-w-6xl px-6 py-14">
     <p class="text-center eyebrow text-blueberry">Trusted by teams at</p>
-    <ul class="mt-6 flex flex-wrap items-center justify-center gap-x-10 gap-y-4 text-center font-heading text-sm font-medium text-ink/60">
-      {partners.map((p) => <li>{p}</li>)}
+    <ul class="mt-8 flex flex-wrap items-center justify-center gap-x-12 gap-y-6">
+      {
+        partners.map((p) => (
+          <li>
+            <img
+              src={p.logo}
+              alt={p.name}
+              class="h-8 w-auto max-w-[140px] object-contain opacity-60 grayscale transition hover:opacity-100 hover:grayscale-0 md:h-10"
+              loading="lazy"
+            />
+          </li>
+        ))
+      }
     </ul>
   </section>
 
@@ -171,9 +192,20 @@ const testimonials = [
           testimonials.map((t) => (
             <figure class="flex flex-col gap-5 rounded-2xl border border-paper/10 bg-paper/5 p-8">
               <blockquote class="text-paper/85">“{t.quote}”</blockquote>
-              <figcaption class="mt-auto">
-                <span class="block font-heading font-medium text-paper">{t.name}</span>
-                <span class="text-sm text-muted-on-dark">{t.title}</span>
+              <figcaption class="mt-auto flex items-center gap-4">
+                {t.avatar && (
+                  <Image
+                    src={t.avatar}
+                    alt={t.name}
+                    class="h-12 w-12 rounded-full object-cover"
+                    width={96}
+                    height={96}
+                  />
+                )}
+                <span>
+                  <span class="block font-heading font-medium text-paper">{t.name}</span>
+                  <span class="text-sm text-muted-on-dark">{t.title}</span>
+                </span>
               </figcaption>
             </figure>
           ))

@@ -4,7 +4,7 @@ import type { ImageMetadata } from "astro";
 // look one up by its file slug (the frontmatter stores names without a path or
 // extension). Astro optimises and hashes these at build time.
 const images = import.meta.glob<{ default: ImageMetadata }>(
-  "/src/assets/images/*.{jpg,jpeg,png,webp,avif}",
+  "/src/assets/images/**/*.{jpg,jpeg,png,webp,avif}",
   { eager: true },
 );
 

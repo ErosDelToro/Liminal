@@ -7,7 +7,7 @@ intro: >-
   personal growth and self-discovery. The retreat creates a space for you to
   step away from the hustle and distractions of daily life and immerse yourself
   in a journey of change, healing, and empowerment. Here's what you can expect:
-keypointsImage: coaching-8901838
+keypointsImage: retreat-greece
 approachImages: []
 seoTitle: Liminal Coaching Retreats | Mehdi Moutahir
 seoDescription: >-

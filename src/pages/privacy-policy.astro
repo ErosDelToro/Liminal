@@ -1,0 +1,40 @@
+---
+import Base from "../layouts/Base.astro";
+import { CONTACT_EMAIL } from "../config";
+---
+
+<Base
+  title="Privacy Policy | Liminal Coaching"
+  description="How Liminal Coaching handles your personal information."
+>
+  <section class="mx-auto max-w-3xl px-6 py-16 md:py-24">
+    <p class="eyebrow">Legal</p>
+    <h1 class="mt-4">Privacy Policy</h1>
+
+    <!--
+      PLACEHOLDER. The Webflow export contained only template boilerplate here,
+      not a real policy. Replace the block below with your actual privacy
+      policy before launch. A coaching business typically needs to cover: what
+      personal data you collect (contact form submissions, analytics), how it's
+      used and stored, third parties (Netlify, any analytics/booking tools),
+      cookies, data-retention, and how someone can request deletion.
+    -->
+    <div class="mt-8 space-y-4 text-ink-soft [&_p]:leading-relaxed">
+      <p class="rounded-lg border border-line bg-paper-warm px-5 py-4 text-sm">
+        <strong class="text-ink">Note:</strong> This is placeholder text. The
+        final privacy policy is still to be added.
+      </p>
+      <p>
+        Liminal Coaching respects your privacy. When you contact us through this
+        website, we collect the information you provide—your name, email address,
+        and message—solely to respond to your enquiry. We do not sell your
+        personal information.
+      </p>
+      <p>
+        For any questions about how your information is handled, or to request
+        that we delete your data, contact
+        <a href={`mailto:${CONTACT_EMAIL}`} class="font-medium text-ink underline underline-offset-4 hover:text-apricot">{CONTACT_EMAIL}</a>.
+      </p>
+    </div>
+  </section>
+</Base>

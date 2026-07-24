@@ -1,0 +1,24 @@
+---
+import Base from "../layouts/Base.astro";
+import BookButton from "../components/BookButton.astro";
+---
+
+<Base title="Thank you | Liminal Coaching" description="Your message has been received.">
+  <section class="mx-auto flex min-h-[50vh] max-w-2xl flex-col items-center justify-center px-6 py-24 text-center">
+    <img src="/brand/mark.svg" alt="" class="mb-6 h-12 w-12" />
+    <h1>Thank you</h1>
+    <p class="mt-6 text-lg text-ink-soft">
+      Your message has been received. I'll get back to you personally, usually
+      within a couple of business days.
+    </p>
+    <div class="mt-10 flex flex-wrap justify-center gap-4">
+      <a
+        href="/"
+        class="inline-block rounded-full border border-ink px-7 py-3 font-heading font-medium text-ink transition-colors hover:bg-ink hover:text-paper"
+      >
+        Back home
+      </a>
+      <BookButton label="Book a Call" />
+    </div>
+  </section>
+</Base>

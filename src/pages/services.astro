@@ -1,0 +1,66 @@
+---
+import Base from "../layouts/Base.astro";
+import Cta from "../components/Cta.astro";
+import { Image } from "astro:assets";
+import { getCollection } from "astro:content";
+import { getImage } from "../lib/images";
+
+const services = (await getCollection("services")).sort(
+  (a, b) => a.data.order - b.data.order,
+);
+---
+
+<Base
+  title="Services | Liminal Coaching"
+  description="Coaching, speaking, workshops, and retreats to help you navigate transitions and author your next chapter."
+>
+  <section class="mx-auto max-w-6xl px-6 pt-16 md:pt-24">
+    <p class="eyebrow">Services</p>
+    <h1 class="mt-4 max-w-3xl">Ways we can work together</h1>
+    <p class="mt-6 max-w-2xl text-lg text-ink-soft">
+      From one-to-one coaching to retreats, speaking, and organizational
+      workshops—each offering is designed to turn change into growth.
+    </p>
+  </section>
+
+  <section class="mx-auto max-w-6xl px-6 py-16">
+    <div class="grid gap-8">
+      {
+        services.map((s, i) => {
+          const img = getImage(s.data.keypointsImage);
+          return (
+            <a
+              href={`/service/${s.id}`}
+              class="group grid items-center gap-8 rounded-2xl border border-line bg-paper-warm/40 p-6 transition-shadow hover:shadow-md md:grid-cols-[280px_1fr] md:p-8"
+            >
+              {img && (
+                <Image
+                  src={img}
+                  alt={s.data.title}
+                  class:list={[
+                    "aspect-[4/3] w-full rounded-xl object-cover",
+                    i % 2 === 1 && "md:order-2",
+                  ]}
+                  widths={[300, 600]}
+                  sizes="(max-width: 768px) 100vw, 280px"
+                />
+              )}
+              <div>
+                <h2 class="text-2xl text-ink group-hover:text-apricot">{s.data.title}</h2>
+                <p class="mt-3 text-ink-soft">{s.data.intro}</p>
+                <span class="mt-4 inline-flex items-center gap-2 font-heading font-medium text-sm text-apricot">
+                  Learn more
+                  <svg class="h-4 w-4" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                    <path d="M4 12L12 4M12 4H5M12 4V11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
+              </div>
+            </a>
+          );
+        })
+      }
+    </div>
+  </section>
+
+  <Cta />
+</Base>

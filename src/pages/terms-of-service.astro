@@ -1,0 +1,39 @@
+---
+import Base from "../layouts/Base.astro";
+import { CONTACT_EMAIL } from "../config";
+---
+
+<Base
+  title="Terms of Service | Liminal Coaching"
+  description="The terms governing use of the Liminal Coaching website and services."
+>
+  <section class="mx-auto max-w-3xl px-6 py-16 md:py-24">
+    <p class="eyebrow">Legal</p>
+    <h1 class="mt-4">Terms of Service</h1>
+
+    <!--
+      PLACEHOLDER. The Webflow export contained only template boilerplate here,
+      not real terms. Replace the block below with your actual terms of service
+      before launch. Coaching businesses typically cover: scope of services,
+      that coaching is not therapy/medical/financial advice, payment and
+      cancellation terms, confidentiality, limitation of liability, and
+      governing law.
+    -->
+    <div class="mt-8 space-y-4 text-ink-soft [&_p]:leading-relaxed">
+      <p class="rounded-lg border border-line bg-paper-warm px-5 py-4 text-sm">
+        <strong class="text-ink">Note:</strong> This is placeholder text. The
+        final terms of service are still to be added.
+      </p>
+      <p>
+        By using this website and engaging Liminal Coaching's services, you agree
+        to the terms set out here. Coaching is a collaborative process and is not
+        a substitute for professional medical, psychological, legal, or financial
+        advice.
+      </p>
+      <p>
+        Questions about these terms can be directed to
+        <a href={`mailto:${CONTACT_EMAIL}`} class="font-medium text-ink underline underline-offset-4 hover:text-apricot">{CONTACT_EMAIL}</a>.
+      </p>
+    </div>
+  </section>
+</Base>

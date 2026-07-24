@@ -1,0 +1,94 @@
+---
+import Base from "../layouts/Base.astro";
+import { CONTACT_EMAIL } from "../config";
+---
+
+<Base
+  title="Contact | Liminal Coaching"
+  description="Get in touch about coaching, workshops, speaking, or simply to learn more about how Liminal can support your next chapter."
+>
+  <section class="mx-auto max-w-3xl px-6 pt-16 md:pt-24">
+    <p class="eyebrow">Contact</p>
+    <h1 class="mt-4">Let's start a conversation</h1>
+    <p class="mt-6 text-lg text-ink-soft">
+      Whether you're exploring coaching, planning a workshop or event, or simply
+      want to learn more about how we can support your growth—reach out and I'll
+      get back to you personally.
+    </p>
+  </section>
+
+  <section class="mx-auto max-w-3xl px-6 py-14">
+    <!--
+      Netlify Forms. The data-netlify attribute makes Netlify detect and host
+      this form at build time; submissions appear in the Netlify dashboard and
+      can be emailed onward. netlify-honeypot adds a spam trap. No backend, no JS.
+      Note: submission only works on the deployed Netlify site, not `astro dev`.
+    -->
+    <form
+      name="contact"
+      method="POST"
+      action="/thanks"
+      data-netlify="true"
+      netlify-honeypot="bot-field"
+      class="space-y-6"
+    >
+      <input type="hidden" name="form-name" value="contact" />
+      <p class="hidden">
+        <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+      </p>
+
+      <div>
+        <label for="name" class="mb-2 block font-heading text-sm font-medium text-ink">
+          Name
+        </label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          required
+          class="w-full rounded-lg border border-line bg-paper px-4 py-3 text-ink outline-none transition focus:border-apricot focus:ring-2 focus:ring-apricot/20"
+        />
+      </div>
+
+      <div>
+        <label for="email" class="mb-2 block font-heading text-sm font-medium text-ink">
+          Email
+        </label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          class="w-full rounded-lg border border-line bg-paper px-4 py-3 text-ink outline-none transition focus:border-apricot focus:ring-2 focus:ring-apricot/20"
+        />
+      </div>
+
+      <div>
+        <label for="message" class="mb-2 block font-heading text-sm font-medium text-ink">
+          Message
+        </label>
+        <textarea
+          id="message"
+          name="message"
+          rows="6"
+          required
+          class="w-full rounded-lg border border-line bg-paper px-4 py-3 text-ink outline-none transition focus:border-apricot focus:ring-2 focus:ring-apricot/20"
+        ></textarea>
+      </div>
+
+      <button
+        type="submit"
+        class="inline-block rounded-full bg-apricot px-7 py-3 font-heading font-medium text-paper transition-colors hover:bg-apricot-bright"
+      >
+        Send message
+      </button>
+    </form>
+
+    <p class="mt-10 text-sm text-ink-soft">
+      Prefer email? Reach me directly at
+      <a href={`mailto:${CONTACT_EMAIL}`} class="font-medium text-ink underline underline-offset-4 hover:text-apricot">
+        {CONTACT_EMAIL}
+      </a>.
+    </p>
+  </section>
+</Base>

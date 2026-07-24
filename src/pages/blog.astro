@@ -1,0 +1,63 @@
+---
+import Base from "../layouts/Base.astro";
+import { Image } from "astro:assets";
+import { getCollection } from "astro:content";
+import { getImage } from "../lib/images";
+
+const posts = (await getCollection("posts"))
+  .filter((p) => !p.data.draft)
+  .sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
+
+const fmt = (d: Date) =>
+  d.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" });
+---
+
+<Base
+  title="Blog | Liminal Coaching"
+  description="Reflections on transitions, leadership, and living with purpose from Mehdi Moutahir."
+>
+  <section class="mx-auto max-w-6xl px-6 pt-16 md:pt-24">
+    <p class="eyebrow">Blog</p>
+    <h1 class="mt-4">Reflections &amp; insights</h1>
+    <p class="mt-6 max-w-2xl text-lg text-ink-soft">
+      Thoughts on transitions, leadership, and living with purpose.
+    </p>
+  </section>
+
+  <section class="mx-auto max-w-6xl px-6 py-16">
+    {
+      posts.length === 0 ? (
+        <div class="rounded-2xl border border-line bg-paper-warm/50 px-8 py-16 text-center">
+          <img src="/brand/mark.svg" alt="" class="mx-auto mb-5 h-10 w-10" />
+          <h2 class="text-2xl">Articles are on the way</h2>
+          <p class="mx-auto mt-3 max-w-md text-ink-soft">
+            New writing is coming soon. In the meantime, feel free to
+            <a href="/contact" class="font-medium text-ink underline underline-offset-4 hover:text-apricot">get in touch</a>.
+          </p>
+        </div>
+      ) : (
+        <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+          {posts.map((post) => {
+            const hero = getImage(post.data.heroImage);
+            return (
+              <a href={`/post/${post.id}`} class="group flex flex-col">
+                {hero && (
+                  <Image
+                    src={hero}
+                    alt={post.data.title}
+                    class="mb-4 aspect-[3/2] w-full rounded-xl object-cover"
+                    widths={[400, 800]}
+                    sizes="(max-width: 768px) 100vw, 380px"
+                  />
+                )}
+                <time class="text-sm text-blueberry">{fmt(post.data.pubDate)}</time>
+                <h3 class="mt-2 text-xl text-ink group-hover:text-apricot">{post.data.title}</h3>
+                <p class="mt-2 text-ink-soft">{post.data.description}</p>
+              </a>
+            );
+          })}
+        </div>
+      )
+    }
+  </section>
+</Base>

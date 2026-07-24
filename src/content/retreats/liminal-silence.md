@@ -9,6 +9,11 @@ intro: >-
 location: Merzouga, Morocco
 dates: ""
 heroImage: silence-desert
+heroCredit:
+  author: Dimitry B
+  authorUrl: https://www.flickr.com/photos/61533954@N00/13663817085
+  license: CC BY 2.0
+  licenseUrl: https://creativecommons.org/licenses/by/2.0/
 seoTitle: Liminal Silence Retreat — Merzouga, Morocco | Liminal Coaching
 seoDescription: >-
   A silent meditation retreat in the Merzouga desert of Morocco—quiet, stillness,

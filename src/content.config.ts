@@ -44,6 +44,16 @@ const retreats = defineCollection({
     location: z.string().optional(),
     dates: z.string().optional(),
     heroImage: z.string().optional(),
+    // Attribution for a licensed hero photo (e.g. CC-BY). Rendered as a small
+    // caption under the image.
+    heroCredit: z
+      .object({
+        author: z.string(),
+        authorUrl: z.string().optional(),
+        license: z.string(),
+        licenseUrl: z.string().optional(),
+      })
+      .optional(),
     // What makes this retreat distinct.
     highlights: z.array(z.object({ title: z.string(), description: z.string() })),
     seoTitle: z.string().optional(),

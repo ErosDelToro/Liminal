@@ -69,6 +69,26 @@ const hero = getImage(data.heroImage);
           sizes="(max-width: 1152px) 100vw, 1152px"
           loading="eager"
         />
+        {data.heroCredit && (
+          <p class="mt-2 text-right text-xs text-blueberry">
+            Photo:{" "}
+            {data.heroCredit.authorUrl ? (
+              <a href={data.heroCredit.authorUrl} class="underline hover:text-apricot" target="_blank" rel="noopener">
+                {data.heroCredit.author}
+              </a>
+            ) : (
+              data.heroCredit.author
+            )}
+            {" · "}
+            {data.heroCredit.licenseUrl ? (
+              <a href={data.heroCredit.licenseUrl} class="underline hover:text-apricot" target="_blank" rel="noopener">
+                {data.heroCredit.license}
+              </a>
+            ) : (
+              data.heroCredit.license
+            )}
+          </p>
+        )}
       </section>
     )
   }

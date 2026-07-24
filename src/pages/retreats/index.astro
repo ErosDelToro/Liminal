@@ -1,0 +1,114 @@
+---
+import Base from "../../layouts/Base.astro";
+import Cta from "../../components/Cta.astro";
+import { Image } from "astro:assets";
+import { getCollection } from "astro:content";
+import { getImage } from "../../lib/images";
+
+const retreats = (await getCollection("retreats")).sort(
+  (a, b) => a.data.order - b.data.order,
+);
+
+// The pillars common to every Liminal retreat (from the original site).
+const pillars = [
+  {
+    title: "Sacred space for reflection",
+    body: "Set in a serene, inspiring location that supports inner quiet and external reflection—a venue that becomes a catalyst for transformation.",
+  },
+  {
+    title: "Deep individual and group coaching",
+    body: "Personalized one-on-one and group sessions with experienced coaches who guide you in navigating your inner landscape.",
+  },
+  {
+    title: "Personal reflection",
+    body: "Time for journaling, meditation, and mindfulness—to process your thoughts, deepen self-understanding, and stay present.",
+  },
+  {
+    title: "Powerful group dynamics",
+    body: "A supportive community of like-minded people, where vulnerability is embraced and collective wisdom is shared.",
+  },
+  {
+    title: "Immersive experiential practices",
+    body: "Nature walks, guided visioning, creative expression, movement, breathwork, and ritual—to embody the lessons, not just discuss them.",
+  },
+  {
+    title: "Reconnect with nature and inner wisdom",
+    body: "Space to reconnect with nature and your own intuition, gaining clarity and insight into your next steps.",
+  },
+];
+---
+
+<Base
+  title="Retreats | Liminal Coaching"
+  description="Transformative retreats for adults navigating life's transitions—Liminal Odyssey, Ascent, Silence, and Eau du Mistral."
+>
+  <!-- Hero -->
+  <section class="mx-auto max-w-6xl px-6 pt-16 md:pt-24">
+    <p class="eyebrow">Retreats</p>
+    <h1 class="mt-4 max-w-3xl">Step away, and come back more yourself</h1>
+    <p class="mt-6 max-w-2xl text-lg text-ink-soft">
+      A Liminal retreat is more than a getaway—it's a transformative experience
+      designed to guide you through a deep, soul-enriching process of growth and
+      self-discovery. Each of our retreats offers a different doorway into that
+      journey.
+    </p>
+  </section>
+
+  <!-- The four retreats -->
+  <section class="mx-auto max-w-6xl px-6 py-16">
+    <div class="grid gap-6 md:grid-cols-2">
+      {
+        retreats.map((r) => {
+          const img = getImage(r.data.heroImage);
+          return (
+            <a
+              href={`/retreats/${r.id}`}
+              class="group flex flex-col overflow-hidden rounded-2xl border border-line bg-paper-warm/40 transition-shadow hover:shadow-md"
+            >
+              {img && (
+                <Image
+                  src={img}
+                  alt={r.data.title}
+                  class="aspect-[16/9] w-full object-cover"
+                  widths={[400, 800]}
+                  sizes="(max-width: 768px) 100vw, 560px"
+                />
+              )}
+              <div class="flex flex-1 flex-col p-8">
+                <p class="eyebrow text-blueberry">{r.data.tagline}</p>
+                <h2 class="mt-2 text-2xl text-ink group-hover:text-apricot">{r.data.title}</h2>
+                <p class="mt-3 flex-1 text-ink-soft">{r.data.intro}</p>
+                <span class="mt-4 inline-flex items-center gap-2 font-heading font-medium text-sm text-apricot">
+                  Explore this retreat
+                  <svg class="h-4 w-4" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                    <path d="M4 12L12 4M12 4H5M12 4V11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
+              </div>
+            </a>
+          );
+        })
+      }
+    </div>
+  </section>
+
+  <!-- What every retreat includes -->
+  <section class="bg-paper-warm">
+    <div class="mx-auto max-w-6xl px-6 py-20">
+      <p class="eyebrow">The experience</p>
+      <h2 class="mt-3 max-w-2xl">What every Liminal retreat offers</h2>
+      <div class="mt-10 grid gap-x-12 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
+        {
+          pillars.map((p) => (
+            <div>
+              <h3 class="text-xl text-ink">{p.title}</h3>
+              <p class="mt-2 text-ink-soft">{p.body}</p>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <Cta />
+</Base>

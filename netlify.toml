@@ -33,10 +33,17 @@
   to = "/services"
   status = 301
 
+# Retreats moved out of /service/ into their own /retreats/ category. Preserve
+# the old retreat URL's ranking by pointing it at the new overview page.
+[[redirects]]
+  from = "/service/liminal-coaching-retreats"
+  to = "/retreats"
+  status = 301
+
 # The old nav pointed a "Start-up coaching" link at the retreats page.
 [[redirects]]
   from = "/service/start-up-coaching"
-  to = "/service/liminal-coaching-retreats"
+  to = "/retreats"
   status = 301
 
 # Old blog posts are being replaced with new writing. Send the old URLs to the

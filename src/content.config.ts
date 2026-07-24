@@ -30,6 +30,28 @@ const services = defineCollection({
   }),
 });
 
+// Retreats — a category of their own, kept separate from services so they
+// don't appear in the Services dropdown/index. One page each, plus an overview.
+const retreats = defineCollection({
+  loader: glob({ pattern: "*.md", base: "./src/content/retreats" }),
+  schema: z.object({
+    title: z.string(),
+    order: z.number(),
+    // Short label under the title, e.g. "The hero's journey retreat".
+    tagline: z.string(),
+    intro: z.string(),
+    // Facts only Mehdi can confirm — left blank in drafts.
+    location: z.string().optional(),
+    dates: z.string().optional(),
+    heroImage: z.string().optional(),
+    // What makes this retreat distinct.
+    highlights: z.array(z.object({ title: z.string(), description: z.string() })),
+    seoTitle: z.string().optional(),
+    seoDescription: z.string(),
+    draftCopy: z.boolean().default(false),
+  }),
+});
+
 // Blog posts. User will supply new articles as markdown files here.
 const posts = defineCollection({
   loader: glob({ pattern: "*.md", base: "./src/content/posts" }),
@@ -42,4 +64,4 @@ const posts = defineCollection({
   }),
 });
 
-export const collections = { services, posts };
+export const collections = { services, retreats, posts };

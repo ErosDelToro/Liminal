@@ -24,7 +24,7 @@ export const SITE_TAGLINE =
 export const NAV_LINKS = [
   { label: "Home", href: "/" },
   { label: "About Us", href: "/about" },
-  { label: "Retreats", href: "/service/liminal-coaching-retreats" },
+  { label: "Retreats", href: "/retreats" },
   { label: "Blog", href: "/blog" },
 ];
 

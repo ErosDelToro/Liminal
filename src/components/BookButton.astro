@@ -1,0 +1,34 @@
+---
+import { BOOKING_URL, BOOKING_READY, CONTACT_EMAIL } from "../config";
+
+interface Props {
+  label?: string;
+  variant?: "primary" | "secondary";
+  class?: string;
+}
+
+const { label = "Book a Call", variant = "primary", class: extra = "" } = Astro.props;
+
+// Until the Google Calendar link exists, point at email so the button still
+// does something sensible. One flip of BOOKING_READY in config.ts switches
+// every button on the site over to the real calendar.
+const href = BOOKING_READY
+  ? BOOKING_URL
+  : `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent("Booking a call")}`;
+const external = BOOKING_READY;
+
+const base =
+  "inline-block rounded-full px-7 py-3 font-heading font-medium text-base transition-colors duration-200";
+const styles = {
+  primary: "bg-apricot text-paper hover:bg-apricot-bright",
+  secondary: "border border-ink text-ink hover:bg-ink hover:text-paper",
+};
+---
+
+<a
+  href={href}
+  class={`${base} ${styles[variant]} ${extra}`}
+  {...external ? { target: "_blank", rel: "noopener" } : {}}
+>
+  {label}
+</a>

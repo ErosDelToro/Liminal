@@ -1,0 +1,117 @@
+---
+import { NAV_LINKS, SERVICE_LINKS } from "../config";
+import BookButton from "./BookButton.astro";
+
+// Highlight the current page in the nav.
+const path = Astro.url.pathname.replace(/\/$/, "") || "/";
+const isActive = (href: string) => (href === "/" ? path === "/" : path.startsWith(href));
+---
+
+<header class="sticky top-0 z-50 border-b border-line bg-paper/95 backdrop-blur">
+  <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+    <a href="/" class="shrink-0" aria-label="Liminal home">
+      <img src="/brand/logo-horizontal.svg" alt="Liminal" class="h-8 w-auto" />
+    </a>
+
+    <!-- Desktop nav -->
+    <nav class="hidden items-center gap-7 lg:flex" aria-label="Primary">
+      {
+        NAV_LINKS.map((link) => (
+          <a
+            href={link.href}
+            class:list={[
+              "font-heading text-sm transition-colors hover:text-apricot",
+              isActive(link.href) ? "text-apricot" : "text-blueberry",
+            ]}
+          >
+            {link.label}
+          </a>
+        ))
+      }
+
+      <!-- Services dropdown (hover on desktop, CSS-only) -->
+      <div class="group relative">
+        <button
+          type="button"
+          class="flex items-center gap-1 font-heading text-sm text-blueberry transition-colors hover:text-apricot"
+          aria-haspopup="true"
+        >
+          Coaching
+          <svg class="h-3 w-3" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+            <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+        <div
+          class="invisible absolute right-0 top-full min-w-56 rounded-lg border border-line bg-paper-warm p-2 opacity-0 shadow-lg transition-all duration-150 group-hover:visible group-hover:opacity-100"
+        >
+          {
+            SERVICE_LINKS.map((link) => (
+              <a
+                href={link.href}
+                class="block rounded-md px-3 py-2 font-heading text-sm text-ink transition-colors hover:bg-paper hover:text-apricot"
+              >
+                {link.label}
+              </a>
+            ))
+          }
+        </div>
+      </div>
+
+      <BookButton />
+    </nav>
+
+    <!-- Mobile menu toggle -->
+    <button
+      type="button"
+      id="menu-toggle"
+      class="lg:hidden"
+      aria-label="Open menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+      <svg class="h-7 w-7 text-ink" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile menu panel -->
+  <nav
+    id="mobile-menu"
+    class="hidden border-t border-line bg-paper px-6 py-4 lg:hidden"
+    aria-label="Mobile"
+  >
+    <div class="flex flex-col gap-1">
+      {
+        NAV_LINKS.map((link) => (
+          <a href={link.href} class="rounded-md px-2 py-2 font-heading text-ink hover:bg-paper-warm">
+            {link.label}
+          </a>
+        ))
+      }
+      <div class="mt-1 border-t border-line pt-2">
+        <p class="px-2 pb-1 eyebrow text-blueberry">Coaching</p>
+        {
+          SERVICE_LINKS.map((link) => (
+            <a href={link.href} class="rounded-md px-2 py-2 font-heading text-sm text-ink hover:bg-paper-warm block">
+              {link.label}
+            </a>
+          ))
+        }
+      </div>
+      <div class="mt-3">
+        <BookButton class="w-full text-center" />
+      </div>
+    </div>
+  </nav>
+</header>
+
+<script>
+  const toggle = document.getElementById("menu-toggle");
+  const menu = document.getElementById("mobile-menu");
+  toggle?.addEventListener("click", () => {
+    const open = menu?.classList.toggle("hidden") === false;
+    toggle.setAttribute("aria-expanded", String(open));
+    toggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+  });
+</script>

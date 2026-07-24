@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 90" width="440" height="90" role="img" aria-label="Liminal — Career · Transitions, horizontal lockup">
+  <g transform="translate(28 21)">
+    <line x1="10" y1="4" x2="10" y2="44" stroke="#26303B" stroke-width="2.8" stroke-linecap="round"></line>
+    <line x1="26" y1="13" x2="26" y2="35" stroke="#F7882F" stroke-width="2.8" stroke-linecap="round"></line>
+    <line x1="42" y1="4" x2="42" y2="44" stroke="#26303B" stroke-width="2.8" stroke-linecap="round"></line>
+  </g>
+  <text x="110" y="46" font-family="&#39;Hanken Grotesk&#39;, system-ui, sans-serif" font-weight="500" font-size="34" letter-spacing="11.56" fill="#26303B">LIMINAL</text>
+  <text x="112" y="68" font-family="&#39;Hanken Grotesk&#39;, system-ui, sans-serif" font-weight="500" font-size="10" letter-spacing="4.2" fill="#6B7A8F">CAREER · TRANSITIONS</text>
+</svg>

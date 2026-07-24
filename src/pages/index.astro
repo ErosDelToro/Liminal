@@ -1,32 +1,16 @@
 ---
-import "../styles/global.css";
+import Base from "../layouts/Base.astro";
+import Cta from "../components/Cta.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" href="/images/favicon.png" />
-		<meta name="viewport" content="width=device-width" />
-		<title>Liminal Coach | Mehdi Moutahir</title>
-	</head>
-	<body>
-		<!-- Placeholder. The real homepage is built in Phase 5; this page exists
-		     so the design tokens can be checked in the browser first. -->
-		<main class="mx-auto max-w-4xl px-6 py-16">
-			<h1>Unlock your potential</h1>
-			<h2 class="mt-6 text-primary">Heading two, Sora</h2>
-			<p class="mt-6 max-w-prose">
-				Body copy is Montserrat at weight 300, matching the Webflow original.
-				Dive into a personalized journey that blends psychological insights and
-				practical strategies, designed to align your aspirations.
-			</p>
-			<div class="mt-10 flex flex-wrap gap-3">
-				<span class="rounded bg-primary px-4 py-2 text-white">primary</span>
-				<span class="rounded bg-accent px-4 py-2 text-white">accent</span>
-				<span class="rounded bg-gold px-4 py-2 text-ink">gold</span>
-				<span class="rounded bg-cream px-4 py-2 text-ink">cream</span>
-				<span class="rounded bg-ink px-4 py-2 text-white">ink</span>
-			</div>
-		</main>
-	</body>
-</html>
+<Base title="Liminal Coach | Mehdi Moutahir">
+  <section class="mx-auto max-w-6xl px-6 py-24">
+    <p class="eyebrow">Identity &amp; transitions coaching</p>
+    <h1 class="mt-4 max-w-3xl">Unlock your potential</h1>
+    <p class="mt-6 max-w-xl text-lg text-ink-soft">
+      Shell preview — header, footer and CTA are shared components, now on the
+      new brand. The real homepage is built in Phase 5.
+    </p>
+  </section>
+  <Cta />
+</Base>

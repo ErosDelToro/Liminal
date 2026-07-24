@@ -1,57 +1,79 @@
 @import "tailwindcss";
 
-/* Self-hosted variable fonts. The Webflow original pulled Montserrat and
-   Open Sans from Google via a render-blocking WebFont.js script; hosting them
-   ourselves removes that third-party request and the flash of unstyled text. */
-@import "@fontsource-variable/sora";
-@import "@fontsource-variable/montserrat";
-@import "@fontsource-variable/open-sans";
+/* Hanken Grotesk — the brand typeface (see assets/BRAND.md). Self-hosted as a
+   variable font rather than pulled from Google Fonts, so there's no
+   third-party request and no flash of unstyled text. Weights used: 400/500/600. */
+@import "@fontsource-variable/hanken-grotesk";
 
-/* Design tokens lifted from the Webflow export's :root block
-   (webflow-export/css/liminal-coaching.webflow.css). These are the real brand
-   values — change them here and the whole site follows. */
+/* Brand "Palette A" — warm, momentum-forward. Slate anchors the type; apricot
+   is the single energy accent; paper tones set the ground. Values are the
+   single source of truth: change here and the whole site follows. */
 @theme {
-  --color-ink: #252628;        /* was --black: body copy */
-  --color-primary: #233138;    /* was --primary: dark slate, headings & buttons */
-  --color-cream: #f7f6f2;      /* was --light-gray: section backgrounds */
-  --color-accent: #f18e46;     /* was --secondary: orange, CTAs & highlights */
-  --color-gold: #ffd360;       /* was --gold: highlights */
+  --color-ink: #26303b;          /* primary text, logo, headings, dark bg */
+  --color-ink-soft: #55606b;     /* body text on light */
+  --color-blueberry: #6b7a8f;    /* muted text, captions, nav links */
+  --color-apricot: #f7882f;      /* primary accent — buttons, links */
+  --color-apricot-bright: #f97c3d; /* accent on dark backgrounds, hover */
+  --color-citrus: #f7c331;       /* secondary accent — sparingly */
+  --color-sand: #dcc7aa;         /* soft fills, dividers */
+  --color-line: #e7dccb;         /* borders, hairlines on paper */
+  --color-paper-warm: #f3eadb;   /* section / alternate background */
+  --color-paper: #fbf7f0;        /* base page background, reversed text on dark */
+  --color-muted-on-dark: #9aa6b2; /* muted text on ink backgrounds */
 
-  --font-heading: "Sora Variable", sans-serif;
-  --font-body: "Montserrat Variable", sans-serif;
-  --font-alt: "Open Sans Variable", sans-serif;
+  --font-heading: "Hanken Grotesk Variable", system-ui, sans-serif;
+  --font-body: "Hanken Grotesk Variable", system-ui, sans-serif;
 }
 
 @layer base {
   body {
-    color: var(--color-ink);
+    color: var(--color-ink-soft);
+    background-color: var(--color-paper);
     font-family: var(--font-body);
-    font-weight: 300;
-    line-height: 1.5;
+    font-weight: 400;
+    line-height: 1.6;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
 
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-heading);
-    font-weight: 400;
+    font-weight: 500;
     color: var(--color-ink);
+    line-height: 1.15;
+    letter-spacing: -0.01em;
     margin: 0;
   }
 
-  /* Sizes match the export's h1–h6 declarations. */
-  h1 { font-size: 4rem;    line-height: 1.1; }
-  h2 { font-size: 3.5rem;  line-height: 1.1; }
-  h3 { font-size: 2rem;    line-height: 1.2; }
-  h4 { font-size: 1.5rem;  line-height: 1.4; }
-  h5 { font-size: 1.25rem; line-height: 1.5; }
-  h6 { font-size: 1rem;    line-height: 1.5; font-weight: 500; }
+  h1 { font-size: 3.5rem; }
+  h2 { font-size: 2.5rem; }
+  h3 { font-size: 1.75rem; letter-spacing: 0; }
+  h4 { font-size: 1.375rem; letter-spacing: 0; }
+  h5 { font-size: 1.125rem; letter-spacing: 0; }
+  h6 { font-size: 1rem; letter-spacing: 0; }
 
-  /* The export's 4rem/3.5rem headings overflow on phones. Webflow handled this
-     with per-breakpoint overrides; this is the equivalent, expressed once. */
   @media (max-width: 767px) {
     h1 { font-size: 2.5rem; }
-    h2 { font-size: 2rem; }
+    h2 { font-size: 1.875rem; }
     h3 { font-size: 1.5rem; }
+  }
+
+  a { color: inherit; }
+}
+
+@layer components {
+  /* Eyebrow / label — uppercase, letter-spaced, apricot (per brand). */
+  .eyebrow {
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    font-size: 0.75rem;
+    color: var(--color-apricot);
+  }
+  /* The logotype treatment, for wordmark rendered as text (e.g. dark footer). */
+  .logotype {
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.32em;
   }
 }

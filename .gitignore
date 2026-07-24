@@ -27,3 +27,4 @@ pnpm-debug.log*
 # Used to extract fonts, colours, spacing and original image assets.
 *.webflow.zip
 webflow-export/
+.DS_Store

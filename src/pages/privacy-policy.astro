@@ -1,40 +1,99 @@
 ---
 import Base from "../layouts/Base.astro";
 import { CONTACT_EMAIL } from "../config";
+
+// NOTE FOR MEHDI: This is a solid, standard privacy policy for a coaching
+// business, but it is not legal advice. Before launch, have it reviewed and
+// adjusted for your jurisdiction (e.g. US state law, or GDPR if you serve EU
+// clients), and update the "Last updated" date and any specifics that change.
+const lastUpdated = "July 2026";
+
+const sections = [
+  {
+    heading: "Who we are",
+    body: [
+      "Liminal Coaching (\"Liminal\", \"we\", \"us\") provides coaching, speaking, workshops, and retreat services. This policy explains what personal information we collect through this website, how we use it, and the choices you have.",
+    ],
+  },
+  {
+    heading: "Information we collect",
+    body: [
+      "We only collect information you choose to give us. When you submit the contact form, we collect your name, email address, and the content of your message. If you book an introductory call, the scheduling tool collects the details you provide to arrange the appointment.",
+      "Like most websites, our host may automatically log basic technical data (such as IP address and browser type) for security and reliability. We do not use this to identify you.",
+    ],
+  },
+  {
+    heading: "How we use your information",
+    body: [
+      "We use the information you provide solely to respond to your enquiry, arrange and deliver coaching or related services, and communicate with you about them. We do not sell, rent, or trade your personal information to anyone.",
+    ],
+  },
+  {
+    heading: "Third-party services",
+    body: [
+      "This site is hosted on Netlify, which processes contact-form submissions and basic server logs on our behalf. If you book a call, scheduling is handled by our booking provider. These providers process your data only to deliver their service. We encourage you to review their respective privacy policies.",
+    ],
+  },
+  {
+    heading: "Cookies and analytics",
+    body: [
+      "This is a static website and does not use tracking or advertising cookies. If we add privacy-respecting analytics in future, we will update this policy to describe what is collected.",
+    ],
+  },
+  {
+    heading: "How long we keep your information",
+    body: [
+      "We keep enquiry and client information only as long as needed to respond to you, provide our services, and meet any legal or accounting obligations. You can ask us to delete your information at any time.",
+    ],
+  },
+  {
+    heading: "Your rights",
+    body: [
+      "You may request access to the personal information we hold about you, ask us to correct it, or ask us to delete it. To make a request, email us using the address below and we will respond within a reasonable time.",
+    ],
+  },
+  {
+    heading: "Children's privacy",
+    body: [
+      "Our services are intended for adults. We do not knowingly collect personal information from children.",
+    ],
+  },
+  {
+    heading: "Changes to this policy",
+    body: [
+      "We may update this policy from time to time. The date below reflects the most recent revision.",
+    ],
+  },
+];
 ---
 
 <Base
   title="Privacy Policy | Liminal Coaching"
-  description="How Liminal Coaching handles your personal information."
+  description="How Liminal Coaching collects, uses, and protects your personal information."
 >
   <section class="mx-auto max-w-3xl px-6 py-16 md:py-24">
     <p class="eyebrow">Legal</p>
     <h1 class="mt-4">Privacy Policy</h1>
+    <p class="mt-3 text-sm text-blueberry">Last updated: {lastUpdated}</p>
 
-    <!--
-      PLACEHOLDER. The Webflow export contained only template boilerplate here,
-      not a real policy. Replace the block below with your actual privacy
-      policy before launch. A coaching business typically needs to cover: what
-      personal data you collect (contact form submissions, analytics), how it's
-      used and stored, third parties (Netlify, any analytics/booking tools),
-      cookies, data-retention, and how someone can request deletion.
-    -->
-    <div class="mt-8 space-y-4 text-ink-soft [&_p]:leading-relaxed">
-      <p class="rounded-lg border border-line bg-paper-warm px-5 py-4 text-sm">
-        <strong class="text-ink">Note:</strong> This is placeholder text. The
-        final privacy policy is still to be added.
-      </p>
-      <p>
-        Liminal Coaching respects your privacy. When you contact us through this
-        website, we collect the information you provide—your name, email address,
-        and message—solely to respond to your enquiry. We do not sell your
-        personal information.
-      </p>
-      <p>
-        For any questions about how your information is handled, or to request
-        that we delete your data, contact
-        <a href={`mailto:${CONTACT_EMAIL}`} class="font-medium text-ink underline underline-offset-4 hover:text-apricot">{CONTACT_EMAIL}</a>.
-      </p>
+    <div class="mt-10 space-y-10">
+      {
+        sections.map((s) => (
+          <div>
+            <h2 class="text-2xl">{s.heading}</h2>
+            {s.body.map((p) => (
+              <p class="mt-3 leading-relaxed text-ink-soft">{p}</p>
+            ))}
+          </div>
+        ))
+      }
+      <div>
+        <h2 class="text-2xl">Contact us</h2>
+        <p class="mt-3 leading-relaxed text-ink-soft">
+          For any questions about this policy or your personal information, contact
+          <a href={`mailto:${CONTACT_EMAIL}`} class="font-medium text-ink underline underline-offset-4 hover:text-apricot">{CONTACT_EMAIL}</a>.
+        </p>
+      </div>
     </div>
   </section>
 </Base>

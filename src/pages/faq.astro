@@ -1,0 +1,90 @@
+---
+import Base from "../layouts/Base.astro";
+import Cta from "../components/Cta.astro";
+
+// Drafted from the site's own content (transitions/ikigai/NLP, the retreat,
+// speaking & workshops, the free intro call). Edit freely. Two details depend
+// on decisions still pending: the intro-call length (drafted as 30 minutes)
+// and session format/pricing — adjust once settled.
+const faqs = [
+  {
+    q: "What is transition coaching, and who is it for?",
+    a: "Transition coaching is for adults standing at a threshold—a career change, a new role, or any moment of reinvention—who want to move through it with clarity rather than drift. Blending engagement theory, NLP, and the concept of ikigai, we turn the space between who you were and who you're becoming into a catalyst for purpose and growth.",
+  },
+  {
+    q: "Is coaching the same as therapy?",
+    a: "No. Coaching is forward-looking and action-oriented—it's about where you want to go and how to get there. It is not therapy, counselling, or a substitute for medical, psychological, legal, or financial advice. If you need that kind of support, we'll happily encourage you to seek an appropriate professional.",
+  },
+  {
+    q: "How does the free intro call work?",
+    a: "It's a free, no-pressure 30-minute conversation. You share what you're navigating and what you're hoping for, and we explore whether working together is the right fit. When you book, you'll answer a couple of short questions so the call is focused and useful from the start.",
+  },
+  {
+    q: "What is Mehdi's approach?",
+    a: "Holistic and evidence-based. Mehdi draws on graduate business education, doctoral research in organizational psychology, and NLP certification, combined with a bioecological view that considers your health, relationships, values, and aspirations together—because no transition happens in just one part of a life.",
+  },
+  {
+    q: "What kinds of coaching do you offer?",
+    a: "One-to-one Transition Coaching for those navigating change, and Executive Coaching for leaders developing emotional intelligence, communication, and value-aligned leadership. Beyond coaching, Liminal also offers speaking, organizational workshops, and the Liminal Odyssey retreat.",
+  },
+  {
+    q: "What is the Liminal Odyssey retreat?",
+    a: "It's a transformative retreat for adults at life's crossroads—a modern rite of passage built around the hero's-journey framework. Through deep coaching, personal reflection, group dialogue, experiential practice, and time in nature, you step away from daily distraction to reconnect with your values and your next steps.",
+  },
+  {
+    q: "Do you work with organizations?",
+    a: "Yes. Mehdi speaks at conferences and corporate events, and designs workshops in collaboration with your learning and development leaders—covering leadership, performance, and cultural change, tailored to your people and goals.",
+  },
+  {
+    q: "How long does coaching take?",
+    a: "It depends on your goals. Some clients come for a specific transition and work together over a few months; others continue longer as new chapters unfold. We'll talk through what makes sense for you on the intro call.",
+  },
+  {
+    q: "How much does it cost?",
+    a: "Fees depend on the type and length of engagement. The best way to get a clear answer is the free intro call, where we can match an approach to your needs and budget.",
+  },
+  {
+    q: "How do I get started?",
+    a: "Book a free intro call, or send a message through the contact page. From there, we'll find the right way forward together.",
+  },
+];
+---
+
+<Base
+  title="FAQ | Liminal Coaching"
+  description="Answers to common questions about coaching, retreats, workshops, and working with Mehdi Moutahir."
+>
+  <section class="mx-auto max-w-3xl px-6 pt-16 md:pt-24">
+    <p class="eyebrow">FAQ</p>
+    <h1 class="mt-4">Questions, answered</h1>
+    <p class="mt-6 text-lg text-ink-soft">
+      A few things people often ask. If yours isn't here, just
+      <a href="/contact" class="font-medium text-ink underline underline-offset-4 hover:text-apricot">get in touch</a>.
+    </p>
+  </section>
+
+  <section class="mx-auto max-w-3xl px-6 py-14">
+    <div class="divide-y divide-line border-y border-line">
+      {
+        faqs.map((f) => (
+          <details class="group py-2">
+            <summary class="flex cursor-pointer items-center justify-between gap-4 py-4 font-heading text-lg font-medium text-ink marker:content-none">
+              {f.q}
+              <svg
+                class="h-5 w-5 shrink-0 text-apricot transition-transform duration-200 group-open:rotate-45"
+                viewBox="0 0 20 20"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path d="M10 4v12M4 10h12" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" />
+              </svg>
+            </summary>
+            <p class="pb-4 leading-relaxed text-ink-soft">{f.a}</p>
+          </details>
+        ))
+      }
+    </div>
+  </section>
+
+  <Cta />
+</Base>

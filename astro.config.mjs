@@ -14,5 +14,11 @@ export default defineConfig({
     plugins: [tailwindcss()]
   },
 
-  integrations: [sitemap()]
+  integrations: [
+    sitemap({
+      // Keep utility pages out of the sitemap — nothing to index there.
+      filter: (page) =>
+        !page.includes("/thanks") && !page.includes("/404"),
+    }),
+  ],
 });

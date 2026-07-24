@@ -5,6 +5,76 @@
 [build.environment]
   NODE_VERSION = "22"
 
-# Redirects and headers are added in Phase 7, before the domain cutover.
-# Until then the site is served only from its *.netlify.app preview URL and
-# liminal.coach continues to be served by Webflow.
+# --- Redirects -------------------------------------------------------------
+# These preserve search rankings and inbound links from the old Webflow site
+# whose URLs no longer exist. Netlify only applies a redirect when no built
+# file matches the path, so real pages always win — these fire for the old,
+# now-removed URLs. 301 = permanent (tells Google the page moved for good).
+
+# The old business-coaching service pages were retired in favour of the real
+# offering. Point them at the services index rather than 404.
+[[redirects]]
+  from = "/service/growth-coaching"
+  to = "/services"
+  status = 301
+
+[[redirects]]
+  from = "/service/sales-coaching"
+  to = "/services"
+  status = 301
+
+[[redirects]]
+  from = "/service/marketing-coaching"
+  to = "/services"
+  status = 301
+
+[[redirects]]
+  from = "/service/leadership-coaching"
+  to = "/services"
+  status = 301
+
+# The old nav pointed a "Start-up coaching" link at the retreats page.
+[[redirects]]
+  from = "/service/start-up-coaching"
+  to = "/service/liminal-coaching-retreats"
+  status = 301
+
+# Old blog posts are being replaced with new writing. Send the old URLs to the
+# blog index so inbound links and search results don't dead-end. If a new post
+# reuses one of these slugs, its built file takes precedence automatically.
+[[redirects]]
+  from = "/post/life-coaching-in-the-ai-era-a-revolution-in-personal-development"
+  to = "/blog"
+  status = 301
+
+[[redirects]]
+  from = "/post/effective-communication-building-stronger-teams-and-relationships"
+  to = "/blog"
+  status = 301
+
+[[redirects]]
+  from = "/post/the-knowing-doing-gap-why-we-dont-do-what-we-know-we-should"
+  to = "/blog"
+  status = 301
+
+[[redirects]]
+  from = "/post/navigating-lifes-in-between-moments-finding-your-way-through-liminal-spaces"
+  to = "/blog"
+  status = 301
+
+[[redirects]]
+  from = "/post/coaching-consulting-and-therapy-understanding-the-distinct-approaches-to-personal-and-professional-development"
+  to = "/blog"
+  status = 301
+
+# NOTE: The apex -> www redirect (liminal.coach -> www.liminal.coach) is handled
+# automatically by Netlify once www is set as the primary domain at cutover, so
+# it is intentionally not hard-coded here.
+
+# --- Security headers -------------------------------------------------------
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "SAMEORIGIN"
+    Referrer-Policy = "strict-origin-when-cross-origin"

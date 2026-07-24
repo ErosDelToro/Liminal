@@ -6,7 +6,8 @@ import Cta from "../../components/Cta.astro";
 import { getImage } from "../../lib/images";
 
 export async function getStaticPaths() {
-  const posts = await getCollection("posts");
+  // Exclude drafts (e.g. the example template) so they never build or index.
+  const posts = (await getCollection("posts")).filter((p) => !p.data.draft);
   return posts.map((entry) => ({ params: { slug: entry.id }, props: { entry } }));
 }
 

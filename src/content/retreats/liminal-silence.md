@@ -1,46 +1,46 @@
 ---
 title: Liminal Silence
 order: 3
-tagline: The stillness retreat
+tagline: The silent desert retreat
 intro: >-
-  In a world that never stops talking, Liminal Silence is an invitation to
-  stop—to set down the noise, rest deeply, and rediscover the quiet voice of
-  your own intuition.
-location: ""
+  A silent meditation retreat in the Sahara. In the vast quiet of the Merzouga
+  desert, Liminal Silence is an invitation to set down the noise of doing and
+  performing, and rediscover what it means simply to be—one with all.
+location: Merzouga, Morocco
 dates: ""
-heroImage: coaching-8901565
-seoTitle: Liminal Silence Retreat | Liminal Coaching
+heroImage: silence-desert
+seoTitle: Liminal Silence Retreat — Merzouga, Morocco | Liminal Coaching
 seoDescription: >-
-  A stillness retreat—an invitation to rest deeply, step away from noise, and
-  reconnect with your own intuition through the practice of silence.
-draftCopy: true
+  A silent meditation retreat in the Merzouga desert of Morocco—quiet, stillness,
+  and inner exploration, moving from doing and performing to simply being.
+draftCopy: false
 highlights:
-  - title: Step away from the noise
+  - title: Silence in the Sahara
     description: >-
-      A deliberate pause from screens, schedules, and constant input—space to
-      let your nervous system settle and your mind grow quiet.
-  - title: Rest as a practice
+      Held in the dunes of Merzouga, the retreat uses the profound quiet of the
+      desert—far from screens and noise—as the ground for deep inner stillness.
+  - title: From doing to being
     description: >-
-      Real rest is more than sleep. Through stillness, gentle movement, and
-      mindfulness, we practise the kind of rest that genuinely restores.
-  - title: Hear your own intuition
+      So much of life is spent performing and achieving. Here we set that down
+      and practise simply being, present and whole, with nothing to prove.
+  - title: Meditation and inner intuition
     description: >-
-      When the noise drops away, a clearer inner voice emerges. Silence creates
-      the conditions to hear it—and to trust it.
-  - title: Held, not alone
+      Through guided and silent meditation, you'll turn inward, quiet the mind,
+      and reconnect with the intuition that the noise of daily life drowns out.
+  - title: Transcendence and oneness
     description: >-
-      Shared silence is a surprisingly connecting experience. You'll be part of
-      a group holding the quiet together, gently guided throughout.
+      Under the vast desert sky, many find a felt sense of transcendence—of being
+      one with all, part of something far larger than the striving self.
 ---
 
-Liminal Silence is for those who feel over-full and under-rested—who sense that
-the answers they're chasing might arrive more easily in stillness than in more
-effort. The retreat is built around intentional quiet: time without the pull of
-devices, punctuated by meditation, reflection, and time in nature.
+Liminal Silence takes place in Merzouga, on the edge of the Moroccan Sahara,
+where the dunes stretch to the horizon and the night sky fills with stars. It is
+a silent retreat: a deliberate withdrawal from words, noise, and the constant
+pull to do and achieve.
 
-You'll leave lighter and clearer, having remembered how to listen inward—and
-carrying practices for finding that stillness again in the middle of an ordinary
-week.
+Through days of quiet meditation, walking in the sand, and stillness beneath an
+immense sky, you'll move from doing toward being—exploring your inner intuition,
+opening to a sense of transcendence, and remembering the quiet truth that beneath
+all the performing, you are already whole and already part of everything.
 
-_Draft description — location, dates, and the specifics of the Silence
-experience to be confirmed._
+_Dates for the next Merzouga retreat to be confirmed._

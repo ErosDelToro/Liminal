@@ -40,6 +40,12 @@
   to = "/retreats"
   status = 301
 
+# The Eau du Mistral retreat was renamed to Liminal Harvest.
+[[redirects]]
+  from = "/retreats/eau-du-mistral"
+  to = "/retreats/liminal-harvest"
+  status = 301
+
 # The old nav pointed a "Start-up coaching" link at the retreats page.
 [[redirects]]
   from = "/service/start-up-coaching"

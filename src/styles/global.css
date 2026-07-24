@@ -1,1 +1,57 @@
 @import "tailwindcss";
+
+/* Self-hosted variable fonts. The Webflow original pulled Montserrat and
+   Open Sans from Google via a render-blocking WebFont.js script; hosting them
+   ourselves removes that third-party request and the flash of unstyled text. */
+@import "@fontsource-variable/sora";
+@import "@fontsource-variable/montserrat";
+@import "@fontsource-variable/open-sans";
+
+/* Design tokens lifted from the Webflow export's :root block
+   (webflow-export/css/liminal-coaching.webflow.css). These are the real brand
+   values — change them here and the whole site follows. */
+@theme {
+  --color-ink: #252628;        /* was --black: body copy */
+  --color-primary: #233138;    /* was --primary: dark slate, headings & buttons */
+  --color-cream: #f7f6f2;      /* was --light-gray: section backgrounds */
+  --color-accent: #f18e46;     /* was --secondary: orange, CTAs & highlights */
+  --color-gold: #ffd360;       /* was --gold: highlights */
+
+  --font-heading: "Sora Variable", sans-serif;
+  --font-body: "Montserrat Variable", sans-serif;
+  --font-alt: "Open Sans Variable", sans-serif;
+}
+
+@layer base {
+  body {
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    font-weight: 300;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: 400;
+    color: var(--color-ink);
+    margin: 0;
+  }
+
+  /* Sizes match the export's h1–h6 declarations. */
+  h1 { font-size: 4rem;    line-height: 1.1; }
+  h2 { font-size: 3.5rem;  line-height: 1.1; }
+  h3 { font-size: 2rem;    line-height: 1.2; }
+  h4 { font-size: 1.5rem;  line-height: 1.4; }
+  h5 { font-size: 1.25rem; line-height: 1.5; }
+  h6 { font-size: 1rem;    line-height: 1.5; font-weight: 500; }
+
+  /* The export's 4rem/3.5rem headings overflow on phones. Webflow handled this
+     with per-breakpoint overrides; this is the equivalent, expressed once. */
+  @media (max-width: 767px) {
+    h1 { font-size: 2.5rem; }
+    h2 { font-size: 2rem; }
+    h3 { font-size: 1.5rem; }
+  }
+}

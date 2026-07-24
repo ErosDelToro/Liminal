@@ -1,17 +1,32 @@
 ---
-
+import "../styles/global.css";
 ---
 
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
+		<link rel="icon" href="/images/favicon.png" />
 		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>Liminal Coach | Mehdi Moutahir</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<!-- Placeholder. The real homepage is built in Phase 5; this page exists
+		     so the design tokens can be checked in the browser first. -->
+		<main class="mx-auto max-w-4xl px-6 py-16">
+			<h1>Unlock your potential</h1>
+			<h2 class="mt-6 text-primary">Heading two, Sora</h2>
+			<p class="mt-6 max-w-prose">
+				Body copy is Montserrat at weight 300, matching the Webflow original.
+				Dive into a personalized journey that blends psychological insights and
+				practical strategies, designed to align your aspirations.
+			</p>
+			<div class="mt-10 flex flex-wrap gap-3">
+				<span class="rounded bg-primary px-4 py-2 text-white">primary</span>
+				<span class="rounded bg-accent px-4 py-2 text-white">accent</span>
+				<span class="rounded bg-gold px-4 py-2 text-ink">gold</span>
+				<span class="rounded bg-cream px-4 py-2 text-ink">cream</span>
+				<span class="rounded bg-ink px-4 py-2 text-white">ink</span>
+			</div>
+		</main>
 	</body>
 </html>

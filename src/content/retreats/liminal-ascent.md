@@ -9,7 +9,7 @@ intro: >-
   yourself trying to reach it.
 location: Zermatt, Switzerland
 dates: ""
-heroImage: ascent-matterhorn
+heroImage: matterhorn-riffelsee
 seoTitle: Liminal Ascent Retreat, Zermatt, Switzerland | Liminal Coaching
 seoDescription: >-
   A physical and mental endurance retreat in Zermatt. Take on the Ultraks trail

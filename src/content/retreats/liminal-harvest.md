@@ -10,7 +10,7 @@ intro: >-
 location: Cœur du Mistral
 venueUrl: ""
 dates: ""
-heroImage: coaching-8902141
+heroImage: harvest-farm-dinner
 seoTitle: Liminal Harvest Retreat | Liminal Coaching
 seoDescription: >-
   A Fall community ritual at Cœur du Mistral. Harvest pomegranates, give thanks

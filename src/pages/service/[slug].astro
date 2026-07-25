@@ -34,8 +34,10 @@ const approachImgs = data.approachImages.map((s) => getImage(s)).filter(Boolean)
 >
   <!-- Hero -->
   <section class="mx-auto max-w-6xl px-6 pb-8 pt-16 md:pt-24">
-    <img src="/brand/mark.svg" alt="" class="mb-6 h-10 w-10" />
-    <h1 class="max-w-3xl">{data.title}</h1>
+    <div class="flex items-center gap-4">
+      <img src="/brand/mark.svg" alt="" class="h-9 w-9 shrink-0" />
+      <h1 class="max-w-3xl">{data.title}</h1>
+    </div>
     <p class="mt-6 max-w-2xl text-lg text-ink-soft">{data.intro}</p>
   </section>
 
@@ -115,8 +117,10 @@ const approachImgs = data.approachImages.map((s) => getImage(s)).filter(Boolean)
             href={`/service/${s.id}`}
             class="group flex flex-col gap-4 rounded-2xl border border-line bg-paper-warm/50 p-8 transition-shadow hover:shadow-md"
           >
-            <img src="/brand/mark.svg" alt="" class="h-9 w-9" />
-            <h3 class="text-ink">{s.data.title}</h3>
+            <div class="flex items-center gap-3">
+              <img src="/brand/mark.svg" alt="" class="h-7 w-7 shrink-0" />
+              <h3 class="text-ink">{s.data.title}</h3>
+            </div>
             <p class="text-ink-soft">{s.data.intro.slice(0, 120)}…</p>
             <span class="mt-2 inline-flex items-center gap-2 font-heading font-medium text-sm text-apricot">
               Read more

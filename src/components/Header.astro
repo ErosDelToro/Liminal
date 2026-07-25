@@ -9,8 +9,15 @@ const isActive = (href: string) => (href === "/" ? path === "/" : path.startsWit
 
 <header class="sticky top-0 z-50 border-b border-line bg-paper/95 backdrop-blur">
   <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-    <a href="/" class="shrink-0" aria-label="Liminal home">
-      <img src="/brand/logo-horizontal.svg" alt="Liminal" class="h-8 w-auto" />
+    <a href="/" class="flex shrink-0 items-center gap-2.5" aria-label="Liminal home">
+      <!-- Brand mark: three bars (full · short · full). Rendered inline so the
+           wordmark uses the page's Hanken Grotesk font and weight. -->
+      <svg class="h-8 w-auto" viewBox="0 0 38 48" fill="none" aria-hidden="true">
+        <line x1="4" y1="2" x2="4" y2="46" stroke="#26303B" stroke-width="4.2" stroke-linecap="round" />
+        <line x1="19" y1="15" x2="19" y2="33" stroke="#F7882F" stroke-width="4.2" stroke-linecap="round" />
+        <line x1="34" y1="2" x2="34" y2="46" stroke="#26303B" stroke-width="4.2" stroke-linecap="round" />
+      </svg>
+      <span class="font-heading text-2xl font-bold leading-none tracking-[0.22em] text-ink">LIMINAL</span>
     </a>
 
     <!-- Desktop nav -->

@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-/* Hanken Grotesk -- the brand typeface (see assets/BRAND.md). Self-hosted as a
+/* Hanken Grotesk -- the brand typeface (see brand-kit/BRAND.md). Self-hosted as a
    variable font rather than pulled from Google Fonts, so there's no
    third-party request and no flash of unstyled text. Weights used: 400/500/600. */
 @import "@fontsource-variable/hanken-grotesk";

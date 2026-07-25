@@ -3,42 +3,40 @@ title: Liminal Odyssey
 order: 1
 tagline: The Examined Life & Hero's Journey retreat
 intro: >-
-  A transformative experience for adults at life's crossroads, ready to shed
-  outdated beliefs and embrace their true aspirations—a modern rite of passage
-  guided by the hero's journey framework.
+  A retreat for adults at a crossroads who are ready to leave old beliefs behind
+  and commit to what they actually want. It follows the structure of the hero's
+  journey as a modern rite of passage.
 location: Greece & Switzerland
-dates: Greece — Summer 2024 · Switzerland — Summer 2025
+dates: "Greece: Summer 2024 · Switzerland: Summer 2025"
 heroImage: retreat-greece
 seoTitle: Liminal Odyssey Retreat | Liminal Coaching
 seoDescription: >-
-  The Examined Life and Hero's Journey retreat—a transformative rite of passage
-  for adults at life's crossroads, guided by expert facilitators.
+  The Examined Life and Hero's Journey retreat: a rite of passage for adults at
+  a crossroads, guided by expert facilitators.
 draftCopy: false
 highlights:
   - title: A modern rite of passage
     description: >-
-      Guided by the hero's journey framework, the Odyssey is designed for those
-      ready to leave one chapter behind and consciously step into the next.
+      Following the structure of the hero's journey, the Odyssey is built for
+      those ready to leave one chapter behind and step into the next.
   - title: Reflective exercises and dialogue
     description: >-
-      Participants engage in reflective exercises, deep dialogues, and creative
-      explorations under the guidance of expert facilitators.
+      Participants work through reflective exercises, deep dialogue, and
+      creative exploration under the guidance of expert facilitators.
   - title: Align with your core values
     description: >-
-      More than insight, the retreat provides practical tools for navigating
-      future changes—so you leave aligned with what matters most to you.
+      Beyond insight, the retreat gives you practical tools for the changes
+      ahead, so you leave aligned with what matters most to you.
   - title: A community of purpose
     description: >-
-      It's a chance to connect with others on similar paths, fostering a
-      community rooted in purpose, authenticity, and fulfilment.
+      A chance to connect with others walking similar paths, and to build a
+      community grounded in purpose, honesty, and meaning.
 ---
 
-The Liminal Odyssey is our flagship retreat: an immersive journey for adults
-standing at a threshold, ready to author their next chapter. Set against the
-backdrop of Greece and Switzerland, it blends the timeless structure of the
-hero's journey with evidence-informed coaching.
+The Liminal Odyssey is our flagship retreat, built for adults standing at a
+threshold and ready to author their next chapter. Set in Greece and Switzerland,
+it combines the structure of the hero's journey with evidence-informed coaching.
 
-Over the course of the retreat you'll step away from daily distraction, examine
-the life you've been living, and reconnect with the aspirations you may have set
-aside. You'll leave not only with clarity, but with a community and a set of
-tools for the transitions still ahead.
+Over the retreat you will step away from daily distraction, examine the life you
+have been living, and reconnect with what you may have set aside. You will leave
+with clarity, a community, and a set of tools for the changes still ahead.

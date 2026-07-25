@@ -22,5 +22,5 @@ are just text separated by a blank line.
 - Like this
 
 You can **bold**, _italicise_, and [link to pages](/contact). When you're ready
-to publish, set `draft: false` in the frontmatter above and push to GitHub —
+to publish, set `draft: false` in the frontmatter above and push to GitHub.
 Netlify rebuilds automatically.

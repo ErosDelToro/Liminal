@@ -17,7 +17,7 @@ const { entry, all } = Astro.props;
 const { data } = entry;
 const { Content } = await render(entry);
 
-// "More Services" — the two other services after this one, by order, wrapping.
+// "More Services": the two other services after this one, by order, wrapping.
 const others = all
   .filter((s) => s.id !== entry.id)
   .sort((a, b) => a.data.order - b.data.order);

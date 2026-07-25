@@ -2,9 +2,9 @@
 title: Workshops
 order: 4
 intro: >-
-  Customized, transformative workshops co-designed with your organization's
-  learning and development leaders—building leadership, performance, and
-  cultural change that lasts.
+  Workshops built with your learning and development team, shaped around your
+  people and goals. They develop leadership, performance, and culture in ways
+  that hold after the session ends.
 keypointsImage: coaching-8902141
 approach:
   heading: How we design your workshop
@@ -13,26 +13,26 @@ approachImages:
   - coaching-8902147
 seoTitle: Workshops | Liminal Coaching
 seoDescription: >-
-  Customized workshops co-designed with your L&D leaders—developing leadership,
-  performance, and lasting cultural change for your organization.
+  Workshops built with your L&D team and shaped around your people and goals,
+  developing leadership, performance, and culture that hold after the session.
 draftCopy: true
 features:
-  - title: Co-designed with you
+  - title: Built with you
     description: >-
-      We build each workshop together with your learning and development
-      leaders, so the content fits your people and your goals precisely.
+      We design each workshop together with your learning and development team,
+      so the content fits your people and your goals precisely.
   - title: Leadership development
     description: >-
       Practical sessions that grow the leadership capacity your organization
       needs now and next.
   - title: Performance and engagement
     description: >-
-      We address the human factors behind performance—motivation, work styles,
+      We address the human factors behind performance: motivation, work styles,
       and how teams actually work together.
   - title: Cultural change
     description: >-
       Workshops designed to shift culture in a lasting way, not just for the
-      afternoon they're delivered.
+      afternoon they are delivered.
   - title: Expert facilitation
     description: >-
       Developed with subject matter experts and delivered by experienced
@@ -44,10 +44,10 @@ features:
 ---
 
 The best organizational learning is built with you, not delivered at you. We
-begin by understanding your people, your culture, and the change you're trying
-to create—then co-design a workshop that speaks directly to it.
+begin by understanding your people, your culture, and the change you want to
+create, then design a workshop that speaks directly to it.
 
-Developed in collaboration with subject matter experts and seasoned
-facilitators, our sessions blend research-grounded content with hands-on
-practice. The result is growth that outlasts the day: new skills, shared
-language, and momentum toward lasting organizational transformation.
+Developed with subject matter experts and seasoned facilitators, our sessions
+combine research-grounded content with hands-on practice. The result is growth
+that outlasts the day: new skills, shared language, and real momentum for the
+change you are after.

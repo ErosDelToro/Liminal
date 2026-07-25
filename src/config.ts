@@ -1,10 +1,10 @@
 /**
  * Site-wide configuration. Single source of truth for things that appear on
- * many pages — change them here, not in individual components.
+ * many pages. Change them here, not in individual components.
  */
 
 // The primary "Book a Call" action. practice.do (the old booking tool) is dead
-// — it 404s — so this is being replaced by a free Google Calendar appointment
+// (it 404s), so this is being replaced by a free Google Calendar appointment
 // schedule. PLACEHOLDER until Mehdi creates the schedule and sends the link;
 // swapping it here updates every "Book a Call" button on the site at once.
 export const BOOKING_URL = "#book-placeholder";
@@ -17,7 +17,7 @@ export const CONTACT_EMAIL = "info.liminal.coach@gmail.com";
 
 // One tagline, reused in the footer and meta description base.
 export const SITE_TAGLINE =
-  "Unlock your potential at Liminal Coaching. Dive into a personalized journey that blends psychological insights and practical strategies, designed to align your aspirations.";
+  "Coaching for adults in transition. We pair psychological insight with practical strategy, so you can move through change and shape what comes next.";
 
 // Primary navigation. Retreats (the Liminal Odyssey) stays a top-level item;
 // the other offerings live in the Services dropdown below.
@@ -28,8 +28,8 @@ export const NAV_LINKS = [
   { label: "Blog", href: "/blog" },
 ];
 
-// Services dropdown in the header — the real offering from the live homepage
-// (Retreats appears as its own top-level nav item, so it's not repeated here).
+// Services dropdown in the header: the real offering from the live homepage.
+// (Retreats appears as its own top-level nav item, so it's not repeated here.)
 export const SERVICE_LINKS = [
   { label: "Transition Coaching", href: "/service/transition-coaching" },
   { label: "Executive Coaching", href: "/service/executive-coaching" },

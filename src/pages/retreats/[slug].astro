@@ -17,7 +17,7 @@ const { entry, all } = Astro.props;
 const { data } = entry;
 const { Content } = await render(entry);
 
-// "More retreats" — the other three, by order, wrapping around.
+// "More retreats": the other three, by order, wrapping around.
 const others = all
   .filter((r) => r.id !== entry.id)
   .sort((a, b) => a.data.order - b.data.order);

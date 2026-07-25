@@ -1,20 +1,20 @@
 @import "tailwindcss";
 
-/* Hanken Grotesk — the brand typeface (see assets/BRAND.md). Self-hosted as a
+/* Hanken Grotesk -- the brand typeface (see assets/BRAND.md). Self-hosted as a
    variable font rather than pulled from Google Fonts, so there's no
    third-party request and no flash of unstyled text. Weights used: 400/500/600. */
 @import "@fontsource-variable/hanken-grotesk";
 
-/* Brand "Palette A" — warm, momentum-forward. Slate anchors the type; apricot
+/* Brand "Palette A" -- warm, momentum-forward. Slate anchors the type; apricot
    is the single energy accent; paper tones set the ground. Values are the
    single source of truth: change here and the whole site follows. */
 @theme {
   --color-ink: #26303b;          /* primary text, logo, headings, dark bg */
   --color-ink-soft: #55606b;     /* body text on light */
   --color-blueberry: #6b7a8f;    /* muted text, captions, nav links */
-  --color-apricot: #f7882f;      /* primary accent — buttons, links */
+  --color-apricot: #f7882f;      /* primary accent -- buttons, links */
   --color-apricot-bright: #f97c3d; /* accent on dark backgrounds, hover */
-  --color-citrus: #f7c331;       /* secondary accent — sparingly */
+  --color-citrus: #f7c331;       /* secondary accent -- sparingly */
   --color-sand: #dcc7aa;         /* soft fills, dividers */
   --color-line: #e7dccb;         /* borders, hairlines on paper */
   --color-paper-warm: #f3eadb;   /* section / alternate background */
@@ -62,7 +62,7 @@
 }
 
 @layer components {
-  /* Eyebrow / label — uppercase, letter-spaced, apricot (per brand). */
+  /* Eyebrow / label -- uppercase, letter-spaced, apricot (per brand). */
   .eyebrow {
     font-weight: 600;
     text-transform: uppercase;

@@ -2,52 +2,51 @@
 title: Transition Coaching
 order: 1
 intro: >-
-  Personalized transition coaching that blends psychological engagement theory
-  and NLP techniques to help you find your ikigai—unlocking potential,
-  redefining success, and turning career and personal aspirations into reality.
+  Transition coaching drawing on engagement theory, NLP, and the idea of ikigai,
+  to help you get clear on what you want, redefine what success means to you, and
+  take real steps toward it.
 keypointsImage: coaching-8901687
 approach:
-  heading: How we work through the threshold together
+  heading: How we work through the change together
 approachImages:
   - coaching-8901565
   - coaching-8902148
 seoTitle: Transition Coaching | Liminal Coaching
 seoDescription: >-
-  Personalized transition coaching blending engagement theory and NLP to help
-  you find your ikigai, redefine success, and author your next chapter.
+  Transition coaching drawing on engagement theory, NLP, and ikigai to help you
+  get clear on what you want, redefine success, and take real steps toward it.
 draftCopy: true
 features:
   - title: Finding your ikigai
     description: >-
-      We locate the intersection of what you love, what you're good at, and what
-      the world needs—so your next chapter is built on purpose, not pressure.
+      We find the intersection of what you care about, what you're good at, and
+      what the world needs, so your next step rests on something solid.
   - title: Naming what you're leaving behind
     description: >-
-      Every transition asks you to shed an old identity. We make that loss
-      conscious and workable rather than something that quietly holds you back.
+      Every transition asks you to let go of an old identity. We make that loss
+      conscious and workable, instead of something that quietly holds you back.
   - title: Redefining success on your terms
     description: >-
-      We question inherited definitions of success and replace them with ones
-      that actually fit the life you want to live.
+      We question the definitions of success you inherited and replace them with
+      ones that fit the life you actually want to live.
   - title: Engagement theory and NLP
     description: >-
-      Using proven psychological tools, we shift the beliefs and patterns that
-      keep you stuck at the threshold between who you were and who you're becoming.
-  - title: Turning aspiration into a plan
+      With proven psychological tools, we work on the beliefs and habits that
+      keep you stuck between who you were and who you're becoming.
+  - title: Turning what you want into a plan
     description: >-
-      We translate a felt sense of "there must be more" into concrete,
-      achievable steps you can start taking now.
+      We translate a felt sense that there must be more into concrete steps you
+      can start taking now.
   - title: Navigating the in-between
     description: >-
-      Liminal space is disorienting by nature. We build the steadiness and
-      self-trust to move through it without rushing to the wrong exit.
+      The space between chapters is disorienting by nature. We build the
+      steadiness to move through it without rushing to the wrong exit.
 ---
 
-Transition is rarely a single decision—it's a passage. We begin by getting
-honest about where you are: what's ending, what's calling, and what's holding
-you in the doorway. From there we build a way forward that honours both.
+Transition is rarely a single decision. It is a passage. We begin by getting
+honest about where you are: what is ending, what is calling, and what is holding
+you in the doorway. From there we build a way forward that respects both.
 
-Drawing on engagement theory, NLP, and the concept of ikigai, our sessions give
-you tools to navigate not just this change but the ones that follow. The aim is
-a life that feels authored rather than inherited—elevated to new heights of
-fulfilment and meaning, defined the way you choose to define them.
+Drawing on engagement theory, NLP, and the idea of ikigai, our sessions give you
+tools to navigate this change and the ones that follow. The aim is a life that
+feels authored rather than inherited, defined the way you choose to define it.

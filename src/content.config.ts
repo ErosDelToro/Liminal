@@ -14,7 +14,7 @@ const services = defineCollection({
     // The six key-point features. Retreats uses these too (its six pillars).
     features: z
       .array(z.object({ title: z.string(), description: z.string() })),
-    // Optional "Approach" section — the 4 coaching pages have it, retreats
+    // Optional "Approach" section -- the 4 coaching pages have it, retreats
     // does not. When present the markdown body renders as its prose.
     approach: z
       .object({ heading: z.string() })
@@ -30,7 +30,7 @@ const services = defineCollection({
   }),
 });
 
-// Retreats — a category of their own, kept separate from services so they
+// Retreats -- a category of their own, kept separate from services so they
 // don't appear in the Services dropdown/index. One page each, plus an overview.
 const retreats = defineCollection({
   loader: glob({ pattern: "*.md", base: "./src/content/retreats" }),
@@ -40,7 +40,7 @@ const retreats = defineCollection({
     // Short label under the title, e.g. "The hero's journey retreat".
     tagline: z.string(),
     intro: z.string(),
-    // Facts only Mehdi can confirm — left blank in drafts.
+    // Facts only Mehdi can confirm -- left blank in drafts.
     location: z.string().optional(),
     dates: z.string().optional(),
     heroImage: z.string().optional(),

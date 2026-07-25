@@ -42,6 +42,9 @@ const retreats = defineCollection({
     intro: z.string(),
     // Facts only Mehdi can confirm -- left blank in drafts.
     location: z.string().optional(),
+    // Optional link for the location (e.g. a venue site). When set, the
+    // location renders as a link.
+    venueUrl: z.string().optional(),
     dates: z.string().optional(),
     heroImage: z.string().optional(),
     // Attribution for a licensed hero photo (e.g. CC-BY). Rendered as a small

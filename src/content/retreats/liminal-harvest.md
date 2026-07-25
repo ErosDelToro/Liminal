@@ -1,46 +1,51 @@
 ---
 title: Liminal Harvest
 order: 4
-tagline: The integration retreat
+tagline: The Fall gratitude ritual
 intro: >-
-  Every season of growth deserves a harvest. This retreat is a time to gather
-  the fruits of your work, integrate what you've learned, and give thanks for
-  how far you've come before planting the next season.
-location: ""
+  A Fall ritual and community gathering. Over a weekend at Cœur du Mistral, we
+  harvest pomegranates by hand, give thanks for what the year has grown, and
+  reflect together on what we are ready to let go of before the pruning season
+  ahead.
+location: Cœur du Mistral
+venueUrl: ""
 dates: ""
 heroImage: coaching-8902141
 seoTitle: Liminal Harvest Retreat | Liminal Coaching
 seoDescription: >-
-  An integration retreat. A time to gather the fruits of your growth,
-  consolidate what you've learned, and move forward with gratitude and clarity.
-draftCopy: true
+  A Fall community ritual at Cœur du Mistral. Harvest pomegranates, give thanks
+  for the year, and reflect on what to keep and what to prune before winter.
+draftCopy: false
 highlights:
-  - title: Gather the fruits of your growth
+  - title: A literal and personal harvest
     description: >-
-      Change is often sown quietly and reaped later. The Harvest is a chance to
-      see how far you've come and take in the growth you may have overlooked.
-  - title: Integrate what you've learned
+      We harvest pomegranates by hand and reflect on your own harvest: what you
+      set out to do this year, and what it has actually yielded.
+  - title: Gratitude and reflection
     description: >-
-      Insight lasts only once it is integrated. Through reflection and coaching,
-      we help the lessons of the past season take root for good.
-  - title: Practise gratitude
+      A celebration of gratitude, and a chance to name the lessons of the past
+      year in the company of others doing the same.
+  - title: Prepare for pruning season
     description: >-
-      Gratitude turns what we have into enough. The retreat makes space to
-      honour the people, choices, and effort that brought you here.
-  - title: Plant the next season
+      Before the year turns, we identify the beliefs and habits of mind that no
+      longer serve you, so you can prune them and make room for what is next.
+  - title: Held in community
     description: >-
-      A harvest clears the ground for what comes next. You will leave with a
-      clear sense of what you want to sow in the season ahead.
+      This is shared work. You reflect and celebrate alongside a group, so the
+      turning of the season is marked together rather than alone.
 ---
 
-Liminal Harvest is for the moment after the hard work, when a chapter is drawing
-to a close and it is time to reap rather than push. So often we move straight
-from one effort to the next without pausing to gather what we have grown. This
-retreat is that pause.
+Liminal Harvest is a Fall ritual. As the year draws toward its close, we gather
+to reap what has been sown: to look honestly at the intentions you set months
+ago and what has come of them, and to give thanks for the growth, the effort,
+and the people who shaped it.
 
-Through reflection, ritual, and shared celebration, you consolidate the growth of
-a season, give thanks for it, and turn toward what is next with a full rather
-than a depleted heart. You will leave grounded, grateful, and ready.
+Harvesting pomegranates by hand is part of the ritual and part of the point. The
+work is embodied, seasonal, and shared. Alongside the gratitude, we prepare for
+pruning season, the deliberate work of naming the beliefs and habits of mind
+that no longer serve you, so the year ahead has room to grow.
 
-_Draft description. Location, dates, and the specifics of the Harvest experience
-to be confirmed._
+These are short weekend programs, held at Cœur du Mistral: the physical home of
+the Liminal work and the Becoming protocol.
+
+_Dates and the link to Cœur du Mistral to be added._

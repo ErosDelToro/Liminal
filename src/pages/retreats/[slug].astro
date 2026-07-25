@@ -44,7 +44,15 @@ const hero = getImage(data.heroImage);
           {data.location && (
             <div>
               <p class="eyebrow text-blueberry">Location</p>
-              <p class="mt-1 font-heading text-ink">{data.location}</p>
+              <p class="mt-1 font-heading text-ink">
+                {data.venueUrl ? (
+                  <a href={data.venueUrl} class="underline decoration-1 underline-offset-4 hover:text-apricot" target="_blank" rel="noopener">
+                    {data.location}
+                  </a>
+                ) : (
+                  data.location
+                )}
+              </p>
             </div>
           )}
           {data.dates && (

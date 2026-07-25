@@ -4,48 +4,46 @@ order: 4
 tagline: The Fall gratitude ritual
 intro: >-
   A Fall ritual and community gathering. Over a weekend at Cœur du Mistral, we
-  harvest pomegranates by hand, give thanks for what the year has grown, and
-  reflect together on what we are ready to let go of before the pruning season
-  ahead.
+  harvest pomegranates by hand, take stock of what the year has grown, and decide
+  together what to carry forward and what to let go of before winter.
 location: Cœur du Mistral
 venueUrl: ""
 dates: ""
 heroImage: harvest-farm-dinner
 seoTitle: Liminal Harvest Retreat | Liminal Coaching
 seoDescription: >-
-  A Fall community ritual at Cœur du Mistral. Harvest pomegranates, give thanks
-  for the year, and reflect on what to keep and what to prune before winter.
+  A Fall community ritual at Cœur du Mistral. Harvest pomegranates, take stock of
+  the year, and decide what to keep and what to prune before winter.
 draftCopy: false
 highlights:
   - title: A literal and personal harvest
     description: >-
-      We harvest pomegranates by hand and reflect on your own harvest: what you
-      set out to do this year, and what it has actually yielded.
-  - title: Gratitude and reflection
+      We pick pomegranates by hand, and use the season's work as a way to look at
+      your own: what you set out to do this year, and what it actually yielded.
+  - title: Gratitude, made specific
     description: >-
-      A celebration of gratitude, and a chance to name the lessons of the past
-      year in the company of others doing the same.
-  - title: Prepare for pruning season
+      Not gratitude in the abstract, but naming the particular people, choices,
+      and effort that shaped your year, out loud, among others doing the same.
+  - title: Pruning season
     description: >-
-      Before the year turns, we identify the beliefs and habits of mind that no
-      longer serve you, so you can prune them and make room for what is next.
-  - title: Held in community
+      As the year turns, we name what has quietly stopped serving you, and decide
+      what to prune so the next season has room.
+  - title: Marked in company
     description: >-
-      This is shared work. You reflect and celebrate alongside a group, so the
-      turning of the season is marked together rather than alone.
+      The reflection happens over shared work and shared meals. Turning the year
+      in company lands differently than doing it alone.
 ---
 
-Liminal Harvest is a Fall ritual. As the year draws toward its close, we gather
-to reap what has been sown: to look honestly at the intentions you set months
-ago and what has come of them, and to give thanks for the growth, the effort,
-and the people who shaped it.
+Liminal Harvest is a Fall ritual. As the year closes, we gather to reap what has
+been sown: to look honestly at the intentions you set months ago and what came of
+them, and to give thanks for the growth, the effort, and the people behind it.
 
-Harvesting pomegranates by hand is part of the ritual and part of the point. The
-work is embodied, seasonal, and shared. Alongside the gratitude, we prepare for
-pruning season, the deliberate work of naming the beliefs and habits of mind
-that no longer serve you, so the year ahead has room to grow.
+Picking pomegranates by hand is part of the ritual and part of the point. The
+work is seasonal, physical, and shared. Alongside the gratitude comes the
+pruning: naming the beliefs and habits that have quietly stopped earning their
+place, and deciding what to leave in the old year.
 
-These are short weekend programs, held at Cœur du Mistral: the physical home of
-the Liminal work and the Becoming protocol.
+These are short weekend programs at Cœur du Mistral, the physical home of the
+Liminal work and the Becoming protocol.
 
 _Dates and the link to Cœur du Mistral to be added._

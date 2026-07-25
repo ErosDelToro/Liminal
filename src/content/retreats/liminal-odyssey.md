@@ -1,42 +1,49 @@
 ---
 title: Liminal Odyssey
 order: 1
-tagline: The Examined Life & Hero's Journey retreat
+tagline: The Examined Life & Hero's Journey voyage
 intro: >-
-  A retreat for adults at a crossroads who are ready to leave old beliefs behind
-  and commit to what they actually want. It follows the structure of the hero's
-  journey as a modern rite of passage.
-location: Greece & Switzerland
-dates: "Greece: Summer 2024 · Switzerland: Summer 2025"
+  A small-group sailing voyage through the Greek seas, shaped by the hero's
+  journey. You travel the same waters and landscapes that gave rise to the West's
+  founding myths and philosophies, and use them to look honestly at your own life
+  and the chapter you are ready to begin.
+location: Greece
+dates: ""
 heroImage: retreat-greece
 seoTitle: Liminal Odyssey Retreat | Liminal Coaching
 seoDescription: >-
-  The Examined Life and Hero's Journey retreat: a rite of passage for adults at
-  a crossroads, guided by expert facilitators.
+  A small-group sailing voyage through the Greek seas, shaped by the hero's
+  journey. Examine your life in the landscape where myth and philosophy began.
 draftCopy: false
 highlights:
-  - title: A modern rite of passage
+  - title: A voyage, not a room
     description: >-
-      Following the structure of the hero's journey, the Odyssey is built for
-      those ready to leave one chapter behind and step into the next.
-  - title: Reflective exercises and dialogue
+      The retreat takes place aboard a small boat, sailing between Greek islands.
+      The passage is literal as well as inner: real crossings, real landfalls,
+      real weather.
+  - title: In the landscape of the myths
     description: >-
-      Participants work through reflective exercises, deep dialogue, and
-      creative exploration under the guidance of expert facilitators.
-  - title: Align with your core values
+      You move through the settings where Homer, the tragedians, and the early
+      philosophers worked. The old stories of departure, trial, and return are
+      not abstract here. They are underfoot.
+  - title: The hero's journey as structure
     description: >-
-      Beyond insight, the retreat gives you practical tools for the changes
-      ahead, so you leave aligned with what matters most to you.
-  - title: A community of purpose
+      The classical arc of leaving, being tested, and returning gives shape to
+      the week, and a frame for the transition you are actually moving through.
+  - title: A small crew
     description: >-
-      A chance to connect with others walking similar paths, and to build a
-      community grounded in purpose, honesty, and meaning.
+      The group is small and the quarters are close. Sailing together, and
+      relying on each other, produces a candour that a conference room rarely does.
 ---
 
-The Liminal Odyssey is our flagship retreat, built for adults standing at a
-threshold and ready to author their next chapter. Set in Greece and Switzerland,
-it combines the structure of the hero's journey with evidence-informed coaching.
+The Liminal Odyssey is our flagship retreat, and the most literal. A small group
+sails the Greek seas together, moving between islands and the places where the
+founding myths and philosophies of the West were first told.
 
-Over the retreat you will step away from daily distraction, examine the life you
-have been living, and reconnect with what you may have set aside. You will leave
-with clarity, a community, and a set of tools for the changes still ahead.
+The hero's journey gives the voyage its shape. You leave the familiar behind,
+meet what the passage asks of you, and come back changed. Between the sailing,
+the sites, and daily coaching, the sea and the myth become a way to examine the
+life you have been living and to commit to the one you want next.
+
+_The first Odyssey sailed the Greek seas in summer 2024. Dates for the next
+voyage to be confirmed._

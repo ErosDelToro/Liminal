@@ -1,11 +1,12 @@
 ---
 title: Liminal Silence
 order: 3
-tagline: The silent desert retreat
+tagline: The silence and starlight retreat
 intro: >-
-  A silent meditation retreat in the Merzouga desert. For a few days in the vast
-  quiet of the Sahara, you stop talking and stop performing, and let the noise
-  settle until you can hear what you actually think and feel.
+  A silent meditation retreat under the desert sky. By day, in the vast quiet of
+  the Merzouga Sahara, you let the noise settle and turn inward. By night, far
+  from any artificial light, you lie beneath one of the darkest skies on earth
+  and watch the Milky Way arc overhead.
 location: Merzouga, Morocco
 dates: ""
 heroImage: silence-desert
@@ -16,8 +17,8 @@ heroCredit:
   licenseUrl: https://creativecommons.org/licenses/by/2.0/
 seoTitle: Liminal Silence Retreat, Merzouga, Morocco | Liminal Coaching
 seoDescription: >-
-  A silent meditation retreat in the Merzouga desert of Morocco. A few days of
-  real quiet to slow down, turn inward, and hear yourself think again.
+  A silent meditation retreat in the Merzouga desert of Morocco. Days of real
+  quiet, and nights under one of the darkest skies on earth watching the Milky Way.
 draftCopy: false
 highlights:
   - title: Silence in the Sahara
@@ -28,23 +29,29 @@ highlights:
     description: >-
       With nothing to make and no one to answer, the constant inner narration
       loosens, and a slower, quieter kind of attention becomes possible.
-  - title: A real meditation practice
+  - title: Under the Milky Way
     description: >-
-      Guided and solo sessions give you a practice you can keep, not just a few
-      calm days that fade the moment you land back home.
-  - title: The scale of the desert
+      Merzouga has some of the darkest, clearest skies anywhere. Nights are spent
+      under the open desert sky, watching the Milky Way in a detail few ever see.
+  - title: A sense of something larger
     description: >-
-      The desert has a scale that quiets the ego without being asked. Many
-      describe a plain, steadying sense of their own smallness.
+      Lying beneath a sky like that, your sense of scale shifts. Many describe a
+      genuine, wordless sense of connection to something far larger than themselves.
 ---
 
 Liminal Silence takes place in Merzouga, on the edge of the Moroccan Sahara,
-where the dunes run to the horizon and the night sky fills with stars. The
-retreat is held in silence: no small talk, no screens, no performing for anyone.
+where the dunes run to the horizon and the nights are among the darkest on earth.
+The retreat holds two kinds of stillness. By day it is silent: no small talk, no
+screens, no performing for anyone, with the time shaped by guided and solo
+meditation and slow walks in the sand.
 
-Days are shaped by guided and solo meditation, slow walks in the sand, and long
-stretches of doing very little. It is less about reaching a particular state and
-more about letting the inner noise go quiet long enough to notice what sits
-underneath it, and to bring some of that quiet home.
+By night, the attention turns outward. Away from every artificial light, the
+Milky Way is vivid overhead, and the sheer scale of it reaches something that
+words tend to miss. This is where many find what the desert has always offered
+those who come to it: a real sense of transcendence, of being a small and
+connected part of something immense.
+
+The two halves work together. The silence quiets the noise inside; the night sky
+reminds you how large the world you are quiet within actually is.
 
 _Dates for the next Merzouga retreat to be confirmed._

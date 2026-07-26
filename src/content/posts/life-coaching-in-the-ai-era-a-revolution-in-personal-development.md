@@ -2,7 +2,7 @@
 title: "Life Coaching in the AI Era: What It Adds, and Where It Stops"
 description: "What AI genuinely adds to coaching, where it stops, and how to use it without mistaking it for the whole job."
 pubDate: 2026-07-24
-heroImage: coaching-8901553
+heroImage: hero-ai-era
 draft: false
 ---
 

@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Liminal favicon">
   <rect x="0" y="0" width="64" height="64" rx="14" fill="#26303B"></rect>
   <line x1="21" y1="19" x2="21" y2="45" stroke="#FBF7F0" stroke-width="3.4" stroke-linecap="round"></line>
-  <line x1="32" y1="25" x2="32" y2="39" stroke="#F97C3D" stroke-width="3.4" stroke-linecap="round"></line>
+  <line x1="33.5" y1="25" x2="30.5" y2="39" stroke="#F97C3D" stroke-width="3.4" stroke-linecap="round"></line>
   <line x1="43" y1="19" x2="43" y2="45" stroke="#FBF7F0" stroke-width="3.4" stroke-linecap="round"></line>
 </svg>

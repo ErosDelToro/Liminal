@@ -28,3 +28,7 @@ pnpm-debug.log*
 *.webflow.zip
 webflow-export/
 .DS_Store
+
+# Internal writing workspace (drafts, style guide, ideas, editorial notes) —
+# local source of truth for the blog posts; never committed or deployed.
+/Coaching Articles/

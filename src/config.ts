@@ -3,15 +3,14 @@
  * many pages. Change them here, not in individual components.
  */
 
-// The primary "Book a Call" action. practice.do (the old booking tool) is dead
-// (it 404s), so this is being replaced by a free Google Calendar appointment
-// schedule. PLACEHOLDER until Mehdi creates the schedule and sends the link;
-// swapping it here updates every "Book a Call" button on the site at once.
-export const BOOKING_URL = "#book-placeholder";
+// The primary "Book a Call" action: Mehdi's free Google Calendar appointment
+// schedule (the exploration-call booking page). Swapping it here updates every
+// "Book a Call" button on the site at once.
+export const BOOKING_URL = "https://calendar.app.google/vDLC7nfRzPNSiUGYA";
 
-// Whether BOOKING_URL is still the placeholder. Used to render a harmless
-// fallback (mailto) so no button is dead while we wait for the real link.
-export const BOOKING_READY = false;
+// Live now, so buttons link to the booking page (BOOKING_READY = false would
+// fall back to a mailto link instead).
+export const BOOKING_READY = true;
 
 export const CONTACT_EMAIL = "info.liminal.coach@gmail.com";
 

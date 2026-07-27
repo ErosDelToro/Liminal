@@ -28,28 +28,32 @@ const testimonials = [
     quote:
       "Mehdi holds a space with equal parts gravitas, humor, and empathy. He made sure that our group got the theoretical and academic content on psychological safety that undergirds his presentation while also making sure we had practical information we could use in our work and daily life. He is keenly aware of the energy in the room and is responsive to it.",
     name: "Rodney Eric Lopez",
-    title: "CEO",
+    title: "Author, Speaker & Founder",
+    org: "Mad Hot Movement",
     avatar: getImage("client-rodney"),
   },
   {
     quote:
       "I left the session energized, informed and with the tools to analyze and adjust a range of mental states and situations. Mehdi brings intelligence and experience, but more importantly, he brings authenticity.",
     name: "Stacy Jones",
-    title: "Professor",
+    title: "Educator & Leader",
+    org: "Department of Education",
     avatar: getImage("client-stacy"),
   },
   {
     quote:
       "Through his coaching I have learned to embrace and appreciate life's transitions, make peace with the imposter syndrome, and become a creative leader while optimizing the strengths of my team. Mehdi has given me the confidence to design the life that supports my values.",
     name: "Weayonnoh Nelson-Davies",
-    title: "Executive Director",
+    title: "Policy Advocate & Executive Director",
+    org: "Economic Progress Institute",
     avatar: getImage("client-weayonnoh"),
   },
   {
     quote:
       "Mehdi is an excellent facilitator and storyteller. I loved how he weaved personal stories into his presentation which was grounded in research. He has a calm, clear manner of presenting content that will resonate with a diverse group.",
     name: "Kilah Walters-Clinton",
-    title: "Director",
+    title: "Social Justice Advocate & Executive Director",
+    org: "Department of Health & Human Services",
     avatar: getImage("client-kilah"),
   },
 ];
@@ -235,7 +239,8 @@ const testimonials = [
                 )}
                 <span>
                   <span class="block font-heading font-medium text-paper">{t.name}</span>
-                  <span class="text-sm text-muted-on-dark">{t.title}</span>
+                  <span class="block text-sm text-muted-on-dark">{t.title}</span>
+                  {t.org && <span class="block text-sm text-paper/45">{t.org}</span>}
                 </span>
               </figcaption>
             </figure>

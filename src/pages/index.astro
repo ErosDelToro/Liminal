@@ -6,11 +6,6 @@ import { Image } from "astro:assets";
 import { getCollection } from "astro:content";
 import { getImage } from "../lib/images";
 
-// Services, in defined order (Transition, Executive, Speaking, Workshops, Retreat).
-const services = (await getCollection("services")).sort(
-  (a, b) => a.data.order - b.data.order,
-);
-
 // Recent posts, if any exist yet.
 const posts = (await getCollection("posts"))
   .filter((p) => !p.data.draft)
@@ -68,13 +63,14 @@ const testimonials = [
         <p class="eyebrow">Identity &amp; transitions coaching</p>
         <h1 class="mt-4">Coaching for the space between chapters.</h1>
         <p class="mt-6 max-w-xl text-lg text-ink-soft">
-          Liminal works with adults in transition: a career shift, a new role,
-          or the quiet sense that a chapter is ending. We combine psychological
-          insight with practical strategy, so you can move through the change
-          with clarity instead of drift.
+          Liminal works with leaders, executives, and people navigating a
+          pivotal transition: a career shift, a new role, or the quiet sense
+          that a chapter is ending. We combine psychological insight with
+          practical strategy, so you can move through the change with clarity
+          instead of drift.
         </p>
-        <div class="mt-8 flex flex-wrap gap-4">
-          <BookButton label="Book a Call" />
+        <div class="mt-8 flex flex-wrap items-center gap-4">
+          <BookButton label="Book a Free 30-Min Call" />
           <a
             href="#services"
             class="inline-block rounded-full border border-ink px-7 py-3 font-heading font-medium text-ink transition-colors hover:bg-ink hover:text-paper"
@@ -82,6 +78,9 @@ const testimonials = [
             Explore services
           </a>
         </div>
+        <p class="mt-3 text-sm text-blueberry">
+          No pitch. A free 30-minute conversation to see if we're a fit.
+        </p>
       </div>
       {
         heroImg && (
@@ -117,54 +116,61 @@ const testimonials = [
     </ul>
   </section>
 
-  <!-- Services -->
+  <!-- Audience segmentation: help visitors self-identify -->
   <section id="services" class="scroll-mt-24 bg-paper-warm">
     <div class="mx-auto max-w-6xl px-6 py-20">
-      <p class="eyebrow">What I offer</p>
-      <h2 class="mt-3 max-w-2xl">Ways we can work together</h2>
-      <div class="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-        {
-          services.map((s) => (
-            <a
-              href={`/service/${s.id}`}
-              class="group flex flex-col gap-4 rounded-2xl border border-line bg-paper p-8 transition-shadow hover:shadow-md"
-            >
-              <div class="flex items-center gap-3">
-                <img src="/brand/mark.svg" alt="" class="h-7 w-7 shrink-0" />
-                <h3 class="text-xl text-ink">{s.data.title}</h3>
-              </div>
-              <p class="flex-1 text-ink-soft">{s.data.intro.slice(0, 150)}…</p>
-              <span class="mt-2 inline-flex items-center gap-2 font-heading font-medium text-sm text-apricot">
-                Learn more
-                <svg class="h-4 w-4" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                  <path d="M4 12L12 4M12 4H5M12 4V11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-              </span>
-            </a>
-          ))
-        }
+      <p class="eyebrow">How I can help</p>
+      <h2 class="mt-3 max-w-2xl">Where are you right now?</h2>
 
-        <!-- Retreats: a category of its own, linking to the overview. -->
-        <a
-          href="/retreats"
-          class="group flex flex-col gap-4 rounded-2xl border border-line bg-ink p-8 text-paper transition-shadow hover:shadow-md"
-        >
-          <div class="flex items-center gap-3">
-            <img src="/brand/mark-reversed.svg" alt="" class="h-7 w-7 shrink-0" />
-            <h3 class="text-xl text-paper">Retreats</h3>
-          </div>
-          <p class="flex-1 text-paper/70">
-            Immersive experiences (Liminal Odyssey, Ascent, Silence, and
-            Harvest) for those ready to step away and author a new chapter.
+      <div class="mt-10 grid gap-6 md:grid-cols-2">
+        <!-- For individuals -->
+        <div class="flex flex-col rounded-2xl border border-line bg-paper p-8 transition-shadow hover:shadow-md">
+          <p class="eyebrow text-blueberry">For individuals</p>
+          <h3 class="mt-3 text-2xl text-ink">Individual &amp; career transitions</h3>
+          <p class="mt-3 flex-1 text-ink-soft">
+            Navigate a career shift, an identity change, or a major life
+            crossroads with clarity and purpose.
           </p>
-          <span class="mt-2 inline-flex items-center gap-2 font-heading font-medium text-sm text-apricot-bright">
-            Explore retreats
-            <svg class="h-4 w-4" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-              <path d="M4 12L12 4M12 4H5M12 4V11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
-          </span>
-        </a>
+          <div class="mt-6 flex flex-wrap gap-x-6 gap-y-2 font-heading font-medium text-sm">
+            <a href="/service/transition-coaching" class="inline-flex items-center gap-1.5 text-apricot hover:underline">
+              Transition Coaching
+              <svg class="h-3.5 w-3.5" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 12L12 4M12 4H5M12 4V11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="/retreats" class="inline-flex items-center gap-1.5 text-apricot hover:underline">
+              Retreats
+              <svg class="h-3.5 w-3.5" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 12L12 4M12 4H5M12 4V11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- For leaders & organizations -->
+        <div class="flex flex-col rounded-2xl border border-ink/10 bg-ink p-8 text-paper transition-shadow hover:shadow-md">
+          <p class="eyebrow text-blueberry">For leaders &amp; organizations</p>
+          <h3 class="mt-3 text-2xl text-paper">Executive coaching &amp; organizations</h3>
+          <p class="mt-3 flex-1 text-paper/70">
+            Develop your leadership, build psychological safety, and guide teams
+            through change and growth.
+          </p>
+          <div class="mt-6 flex flex-wrap gap-x-6 gap-y-2 font-heading font-medium text-sm">
+            <a href="/service/executive-coaching" class="inline-flex items-center gap-1.5 text-apricot-bright hover:underline">
+              Executive Coaching
+              <svg class="h-3.5 w-3.5" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 12L12 4M12 4H5M12 4V11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="/service/workshops" class="inline-flex items-center gap-1.5 text-apricot-bright hover:underline">
+              Workshops
+              <svg class="h-3.5 w-3.5" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 12L12 4M12 4H5M12 4V11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="/service/speaking" class="inline-flex items-center gap-1.5 text-apricot-bright hover:underline">
+              Speaking
+              <svg class="h-3.5 w-3.5" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 12L12 4M12 4H5M12 4V11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>
       </div>
+
+      <p class="mt-8 text-sm text-ink-soft">
+        See <a href="/services" class="font-medium text-ink underline underline-offset-4 hover:text-apricot">all services and how we work together</a>.
+      </p>
     </div>
   </section>
 

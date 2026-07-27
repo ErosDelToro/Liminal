@@ -12,7 +12,7 @@ export const BOOKING_URL = "https://calendar.app.google/vDLC7nfRzPNSiUGYA";
 // fall back to a mailto link instead).
 export const BOOKING_READY = true;
 
-export const CONTACT_EMAIL = "info.liminal.coach@gmail.com";
+export const CONTACT_EMAIL = "hello@liminal.coach";
 
 // One tagline, reused in the footer and meta description base.
 export const SITE_TAGLINE =

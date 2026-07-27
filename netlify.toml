@@ -80,9 +80,8 @@
   to = "/blog"
   status = 301
 
-# NOTE: The apex -> www redirect (liminal.coach -> www.liminal.coach) is handled
-# automatically by Netlify once www is set as the primary domain at cutover, so
-# it is intentionally not hard-coded here.
+# NOTE: The bare domain (liminal.coach) is the primary; Netlify 301-redirects
+# www.liminal.coach -> liminal.coach automatically, so it is not hard-coded here.
 
 # --- Security headers -------------------------------------------------------
 [[headers]]

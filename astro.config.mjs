@@ -6,9 +6,9 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-  // Used for canonical URLs and sitemap generation. Update to the Netlify
-  // preview URL while testing, then to the live domain at cutover.
-  site: 'https://www.liminal.coach',
+  // Used for canonical URLs and sitemap generation. Set to the primary live
+  // domain (bare, no-www; www 301-redirects to it via Netlify).
+  site: 'https://liminal.coach',
 
   vite: {
     plugins: [tailwindcss()]

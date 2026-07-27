@@ -2,24 +2,33 @@
 import Base from "../layouts/Base.astro";
 import { CONTACT_EMAIL } from "../config";
 
-// NOTE FOR MEHDI: This is standard, reasonable terms-of-service copy for a
-// coaching business, but it is not legal advice. Have it reviewed before
-// launch, set your governing jurisdiction where noted, and align the
-// scheduling/payment/cancellation section with how you actually run sessions.
+// NOTE FOR MEHDI: These terms are aligned in scope with a professional coaching
+// practice's terms of service (eligibility, coaching disclaimers, payment,
+// confidentiality, acceptable use, IP, third-party links, disclaimer, liability,
+// indemnity, governing law, severability, entire agreement). They are NOT legal
+// advice. Before relying on them, have them reviewed, name your governing
+// jurisdiction where noted, and align the scheduling/payment/cancellation and
+// refund terms with how you actually run sessions.
 const lastUpdated = "July 2026";
 
 const sections = [
   {
     heading: "Acceptance of these terms",
     body: [
-      "By using this website and engaging Liminal Coaching's services, you agree to these terms. If you do not agree, please do not use the site or our services.",
+      "By using this website or engaging Liminal Coaching's services, you agree to these terms. If you do not agree, please do not use the site or our services.",
+    ],
+  },
+  {
+    heading: "Who may use this site",
+    body: [
+      "This website and our services are intended for adults. By using them, you confirm that you are at least 18 years old and able to enter into a binding agreement.",
     ],
   },
   {
     heading: "Nature of coaching services",
     body: [
       "Coaching is a collaborative, forward-looking partnership designed to support your personal and professional growth. It is not therapy, counselling, or a substitute for professional medical, psychological, legal, or financial advice. If you need support of that kind, we encourage you to consult an appropriately qualified professional.",
-      "You are responsible for your own decisions, actions, and results. Coaching may explore sensitive topics, and you may decline to discuss anything at any time.",
+      "Coaching may explore sensitive topics, and you may decline to discuss anything at any time.",
     ],
   },
   {
@@ -29,9 +38,15 @@ const sections = [
     ],
   },
   {
+    heading: "Your responsibilities",
+    body: [
+      "You are responsible for your own choices, actions, and results, and for any decisions you make during or after our work together. You agree to provide accurate information and to take part in good faith. Coaching works best when you take ownership of the process.",
+    ],
+  },
+  {
     heading: "Scheduling, payment, and cancellation",
     body: [
-      "Details of session length, fees, payment terms, and cancellation or rescheduling policies are agreed with you before an engagement begins. Please give as much notice as possible if you need to reschedule so the time can be offered to someone else.",
+      "Session length, fees, payment terms, and cancellation or rescheduling policies are agreed with you before an engagement begins and form part of your agreement with us. Please give as much notice as possible if you need to reschedule, so the time can be offered to someone else. Fees paid are non-refundable except where the law requires otherwise or we agree otherwise in writing.",
     ],
   },
   {
@@ -41,27 +56,57 @@ const sections = [
     ],
   },
   {
+    heading: "Acceptable use of the website",
+    body: [
+      "You agree to use this website lawfully. You may not attempt to disrupt it, gain unauthorised access, copy or scrape it at scale, or use it for any unlawful or harmful purpose.",
+    ],
+  },
+  {
     heading: "Intellectual property",
     body: [
-      "The content on this website (text, images, logos, and design) belongs to Liminal Coaching or its licensors and may not be copied or reused without permission.",
+      "The content on this website, and any materials we share during an engagement (text, images, logos, frameworks, exercises, and design), belong to Liminal Coaching or its licensors. You may not copy, distribute, or reuse them for commercial purposes without our written permission.",
+    ],
+  },
+  {
+    heading: "Third-party links and services",
+    body: [
+      "This site links to third-party services, including our external booking page. We do not control and are not responsible for those services or their content, and your use of them is governed by their own terms.",
+    ],
+  },
+  {
+    heading: "Disclaimer",
+    body: [
+      "This website and its content are provided on an \"as is\" and \"as available\" basis, without warranties of any kind, whether express or implied. We work to keep the information accurate and the site available, but we do not warrant that it will be error-free or uninterrupted.",
     ],
   },
   {
     heading: "Limitation of liability",
     body: [
-      "To the fullest extent permitted by law, Liminal Coaching is not liable for any indirect or consequential loss arising from use of this website or our services. Nothing in these terms limits liability that cannot be limited by law.",
+      "To the fullest extent permitted by law, Liminal Coaching is not liable for any indirect, incidental, or consequential loss arising from your use of this website or our services. Nothing in these terms limits any liability that cannot be limited or excluded by law.",
     ],
   },
   {
-    heading: "Governing law",
+    heading: "Indemnity",
     body: [
-      "These terms are governed by the laws of the jurisdiction in which Liminal Coaching operates. Any disputes will be handled by the courts of that jurisdiction.",
+      "You agree to cover any reasonable claims, losses, or costs we incur as a result of your misuse of this website or your breach of these terms.",
+    ],
+  },
+  {
+    heading: "Governing law and disputes",
+    body: [
+      "These terms are governed by the laws of the jurisdiction in which Liminal Coaching operates, and any disputes will be handled by the courts of that jurisdiction.",
+    ],
+  },
+  {
+    heading: "General",
+    body: [
+      "If any part of these terms is found to be unenforceable, the remaining parts continue to apply. These terms, together with any separate coaching or services agreement we enter into with you, make up the entire agreement between us on their subject matter.",
     ],
   },
   {
     heading: "Changes to these terms",
     body: [
-      "We may update these terms from time to time. The date below reflects the most recent revision.",
+      "We may update these terms from time to time. The date above reflects the most recent revision, and any changes take effect when posted here.",
     ],
   },
 ];

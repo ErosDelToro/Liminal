@@ -1,9 +1,7 @@
 ---
 import { getCollection, render } from "astro:content";
-import { Image } from "astro:assets";
 import Base from "../../layouts/Base.astro";
 import Cta from "../../components/Cta.astro";
-import { getImage } from "../../lib/images";
 
 export async function getStaticPaths() {
   const services = await getCollection("services");
@@ -23,9 +21,6 @@ const others = all
   .sort((a, b) => a.data.order - b.data.order);
 const start = others.findIndex((s) => s.data.order > data.order);
 const more = [...others.slice(start === -1 ? 0 : start), ...others].slice(0, 2);
-
-const keypointsImg = getImage(data.keypointsImage);
-const approachImgs = data.approachImages.map((s) => getImage(s)).filter(Boolean);
 ---
 
 <Base
@@ -41,30 +36,17 @@ const approachImgs = data.approachImages.map((s) => getImage(s)).filter(Boolean)
     <p class="mt-6 max-w-2xl text-lg text-ink-soft">{data.intro}</p>
   </section>
 
-  <!-- Key points: image + six features -->
+  <!-- Key points: six features -->
   <section class="mx-auto max-w-6xl px-6 py-12">
-    <div class="grid items-start gap-12 lg:grid-cols-2">
+    <div class="grid gap-x-12 gap-y-8 md:grid-cols-2">
       {
-        keypointsImg && (
-          <Image
-            src={keypointsImg}
-            alt={data.title}
-            class="w-full rounded-2xl object-cover shadow-sm lg:sticky lg:top-24"
-            widths={[400, 800]}
-            sizes="(max-width: 1024px) 100vw, 500px"
-          />
-        )
+        data.features.map((f) => (
+          <div>
+            <h3 class="text-xl text-ink">{f.title}</h3>
+            <p class="mt-2 text-ink-soft">{f.description}</p>
+          </div>
+        ))
       }
-      <div class="space-y-8">
-        {
-          data.features.map((f) => (
-            <div>
-              <h3 class="text-xl text-ink">{f.title}</h3>
-              <p class="mt-2 text-ink-soft">{f.description}</p>
-            </div>
-          ))
-        }
-      </div>
     </div>
   </section>
 
@@ -75,32 +57,17 @@ const approachImgs = data.approachImages.map((s) => getImage(s)).filter(Boolean)
         <div class="mx-auto max-w-6xl px-6 py-20">
           <p class="eyebrow">Approach</p>
           <h2 class="mt-3 max-w-2xl">{data.approach.heading}</h2>
-          <div class="mt-8 grid gap-12 lg:grid-cols-2">
-            <div class="space-y-4 text-ink-soft [&_p]:leading-relaxed">
-              <Content />
-              <a
-                href="/contact"
-                class="mt-2 inline-flex items-center gap-2 font-heading font-medium text-ink underline underline-offset-4 hover:text-apricot"
-              >
-                Get in touch
-                <svg class="h-4 w-4" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                  <path d="M4 12L12 4M12 4H5M12 4V11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-              </a>
-            </div>
-            {approachImgs.length > 0 && (
-              <div class="grid grid-cols-2 gap-4">
-                {approachImgs.map((img) => (
-                  <Image
-                    src={img!}
-                    alt=""
-                    class="w-full rounded-xl object-cover"
-                    widths={[300, 600]}
-                    sizes="(max-width: 1024px) 50vw, 250px"
-                  />
-                ))}
-              </div>
-            )}
+          <div class="mt-8 max-w-2xl space-y-4 text-ink-soft [&_p]:leading-relaxed">
+            <Content />
+            <a
+              href="/contact"
+              class="mt-2 inline-flex items-center gap-2 font-heading font-medium text-ink underline underline-offset-4 hover:text-apricot"
+            >
+              Get in touch
+              <svg class="h-4 w-4" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M4 12L12 4M12 4H5M12 4V11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
           </div>
         </div>
       </section>

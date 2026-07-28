@@ -2,12 +2,12 @@
 title: Speaking
 order: 3
 intro: >-
-  Mehdi speaks at conferences, corporate events, and workshops, combining
-  research with real-world experience. The talks are practical and grounded, and
-  they leave an audience something to actually use.
+  I speak at conferences, corporate events, and workshops, combining research
+  with real-world experience. My talks are practical and grounded, and they
+  leave an audience something to actually use.
 keypointsImage: coaching-8902332
 approach:
-  heading: What a talk with Mehdi looks like
+  heading: What my talks look like
 approachImages:
   - coaching-8901553
   - coaching-8902364
@@ -44,9 +44,9 @@ features:
 ---
 
 Great talks do two things at once. They move a room, and they leave something
-useful behind. Mehdi weaves personal story into research-grounded content,
-reading the energy of the audience and responding to it in real time.
+useful behind. I weave personal story into research-grounded content, reading
+the energy of the audience and responding to it in real time.
 
 Whether it is a conference keynote, a corporate gathering, or a workshop, the
 aim is the same: to give people a real reason to think differently and act. Tell
-us about your event and we will design a talk that fits it.
+me about your event and I will design a talk that fits it.

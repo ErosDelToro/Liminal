@@ -16,13 +16,13 @@ export const CONTACT_EMAIL = "hello@liminal.coach";
 
 // One tagline, reused in the footer and meta description base.
 export const SITE_TAGLINE =
-  "Coaching for adults in transition. We pair psychological insight with practical strategy, so you can move through change and shape what comes next.";
+  "Coaching for adults in transition. I pair psychological insight with practical strategy, so you can move through change and shape what comes next.";
 
 // Primary navigation. Retreats (the Liminal Odyssey) stays a top-level item;
 // the other offerings live in the Services dropdown below.
 export const NAV_LINKS = [
   { label: "Home", href: "/" },
-  { label: "About Us", href: "/about" },
+  { label: "About Mehdi", href: "/about" },
   { label: "Retreats", href: "/retreats" },
   { label: "Blog", href: "/blog" },
 ];

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.liminal.coach/sitemap-index.xml
+Sitemap: https://liminal.coach/sitemap-index.xml

@@ -9,7 +9,7 @@ import Cta from "../components/Cta.astro";
 const faqs = [
   {
     q: "What is transition coaching, and who is it for?",
-    a: "Transition coaching is for adults at a threshold: a career change, a new role, or a wider shift in direction. It is for people who want to move through that change with clarity rather than drift. We draw on engagement theory, NLP, and the idea of ikigai to help you get clear on what you want and take real steps toward it.",
+    a: "Transition coaching is for adults at a threshold: a career change, a new role, or a wider shift in direction. It is for people who want to move through that change with clarity. We draw on engagement theory, NLP, and the idea of ikigai to help you get clear on what you want and take real steps toward it.",
   },
   {
     q: "Is coaching the same as therapy?",
@@ -48,11 +48,22 @@ const faqs = [
     a: "Book a free intro call, or send a message through the contact page. From there, we will find the right way forward together.",
   },
 ];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((f) => ({
+    "@type": "Question",
+    name: f.q,
+    acceptedAnswer: { "@type": "Answer", text: f.a },
+  })),
+};
 ---
 
 <Base
   title="FAQ | Liminal Coaching"
   description="Answers to common questions about coaching, retreats, workshops, and working with Mehdi Moutahir."
+  schema={faqSchema}
 >
   <section class="mx-auto max-w-3xl px-6 pt-16 md:pt-24">
     <p class="eyebrow">FAQ</p>

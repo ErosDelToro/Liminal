@@ -25,11 +25,23 @@ const start = others.findIndex((r) => r.data.order > data.order);
 const more = [...others.slice(start === -1 ? 0 : start), ...others].slice(0, 3);
 
 const hero = getImage(data.heroImage);
+
+const origin = (Astro.site ?? new URL(Astro.url.origin)).href.replace(/\/$/, "");
+const breadcrumb = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: `${origin}/` },
+    { "@type": "ListItem", position: 2, name: "Retreats", item: `${origin}/retreats` },
+    { "@type": "ListItem", position: 3, name: data.title, item: `${origin}/retreats/${entry.id}` },
+  ],
+};
 ---
 
 <Base
   title={data.seoTitle ?? `${data.title} | Liminal Coaching`}
   description={data.seoDescription}
+  schema={breadcrumb}
 >
   <!-- Hero -->
   <section class="mx-auto max-w-6xl px-6 pt-16 md:pt-24">

@@ -17,9 +17,38 @@ const { Content } = await render(entry);
 const hero = getImage(data.heroImage);
 const fmt = (d: Date) =>
   d.toLocaleDateString("en-US", { year: "numeric", month: "long" });
+
+const origin = (Astro.site ?? new URL(Astro.url.origin)).href.replace(/\/$/, "");
+const postUrl = `${origin}/post/${entry.id}`;
+const heroAbs = hero ? new URL(hero.src, `${origin}/`).href : undefined;
+const published = data.pubDate.toISOString();
+
+const schema = [
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: data.title,
+    description: data.description,
+    ...(heroAbs ? { image: heroAbs } : {}),
+    datePublished: published,
+    dateModified: published,
+    author: { "@type": "Person", "@id": `${origin}/#mehdi`, name: "Mehdi Moutahir" },
+    publisher: { "@id": `${origin}/#org` },
+    mainEntityOfPage: postUrl,
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: `${origin}/` },
+      { "@type": "ListItem", position: 2, name: "Blog", item: `${origin}/blog` },
+      { "@type": "ListItem", position: 3, name: data.title, item: postUrl },
+    ],
+  },
+];
 ---
 
-<Base title={`${data.title} | Liminal Coaching`} description={data.description} ogImage={hero?.src}>
+<Base title={`${data.title} | Liminal Coaching`} description={data.description} ogImage={hero?.src} ogType="article" publishedTime={published} schema={schema}>
   <article class="mx-auto max-w-3xl px-6 pt-16 md:pt-24">
     <a href="/blog" class="font-heading text-sm text-apricot hover:underline">← All articles</a>
     <time class="mt-8 block text-sm text-blueberry">{fmt(data.pubDate)}</time>

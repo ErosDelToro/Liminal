@@ -14,6 +14,11 @@ export const BOOKING_READY = true;
 
 export const CONTACT_EMAIL = "hello@liminal.coach";
 
+// Public profiles used for the "sameAs" entity signal in structured data
+// (JSON-LD). Add full profile URLs (LinkedIn, Instagram, etc.) and they flow
+// into the site's Person/Organization schema automatically. Empty = omitted.
+export const SOCIAL_LINKS: string[] = [];
+
 // One tagline, reused in the footer and meta description base.
 export const SITE_TAGLINE =
   "Coaching for adults in transition. I pair psychological insight with practical strategy, so you can move through change and shape what comes next.";

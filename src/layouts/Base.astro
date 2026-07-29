@@ -2,25 +2,71 @@
 import "../styles/global.css";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
-import { SITE_TAGLINE } from "../config";
+import { SITE_TAGLINE, CONTACT_EMAIL, SOCIAL_LINKS } from "../config";
 
 interface Props {
   title: string;
   description?: string;
   /** Path to an OG image under /public, or an absolute URL. */
   ogImage?: string;
+  /** OpenGraph type: "website" for most pages, "article" for blog posts. */
+  ogType?: "website" | "article";
+  /** ISO date string, emitted as article:published_time for blog posts. */
+  publishedTime?: string;
+  /** Page-specific JSON-LD (object or array). Merged with the site entity graph. */
+  schema?: Record<string, unknown> | Record<string, unknown>[];
 }
 
 const {
   title,
   description = SITE_TAGLINE,
   ogImage = "/images/og-default.jpg",
+  ogType = "website",
+  publishedTime,
+  schema,
 } = Astro.props;
 
-const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url.origin).href;
+const origin = (Astro.site ?? new URL(Astro.url.origin)).href.replace(/\/$/, "");
+const canonical = new URL(Astro.url.pathname, `${origin}/`).href;
 const ogImageUrl = ogImage.startsWith("http")
   ? ogImage
-  : new URL(ogImage, Astro.site ?? Astro.url.origin).href;
+  : new URL(ogImage, `${origin}/`).href;
+
+// Site-wide entity graph: who Mehdi is and what Liminal Coaching is, linked
+// together so search engines resolve the person and the practice as entities.
+// "sameAs" only appears once SOCIAL_LINKS has profile URLs.
+const sameAs = SOCIAL_LINKS.length ? { sameAs: SOCIAL_LINKS } : {};
+const siteGraph = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": `${origin}/#mehdi`,
+      name: "Mehdi Moutahir",
+      jobTitle: "Transition & Executive Coach",
+      url: `${origin}/about`,
+      image: `${origin}/images/mehdi-portrait.jpg`,
+      worksFor: { "@id": `${origin}/#org` },
+      ...sameAs,
+    },
+    {
+      "@type": "ProfessionalService",
+      "@id": `${origin}/#org`,
+      name: "Liminal Coaching",
+      url: `${origin}/`,
+      email: CONTACT_EMAIL,
+      logo: `${origin}/brand/logo-horizontal.png`,
+      image: `${origin}/images/og-default.jpg`,
+      description: SITE_TAGLINE,
+      founder: { "@id": `${origin}/#mehdi` },
+      areaServed: "Worldwide",
+      ...sameAs,
+    },
+  ],
+};
+
+// Page-specific schema, normalised to an array for rendering.
+const pageSchema = schema ? (Array.isArray(schema) ? schema : [schema]) : [];
 ---
 
 <!doctype html>
@@ -37,15 +83,24 @@ const ogImageUrl = ogImage.startsWith("http")
     <meta name="description" content={description} />
 
     <!-- Open Graph / Twitter -->
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content={ogType} />
+    <meta property="og:site_name" content="Liminal Coaching" />
+    <meta property="og:locale" content="en_US" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:image" content={ogImageUrl} />
     <meta property="og:url" content={canonical} />
+    {publishedTime && <meta property="article:published_time" content={publishedTime} />}
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={ogImageUrl} />
+
+    <!-- Structured data: site entity graph + any page-specific schema -->
+    <script type="application/ld+json" set:html={JSON.stringify(siteGraph)} />
+    {pageSchema.map((s) => (
+      <script type="application/ld+json" set:html={JSON.stringify(s)} />
+    ))}
   </head>
   <body class="flex min-h-screen flex-col bg-paper">
     <Header />

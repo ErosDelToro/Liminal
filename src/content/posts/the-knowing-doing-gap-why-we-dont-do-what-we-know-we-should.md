@@ -1,7 +1,7 @@
 ---
 title: "The Knowing-Doing Gap: Why We Don't Do What We Know We Should"
 description: "Why knowing what to do so rarely turns into doing it, and how to close the gap between the two."
-pubDate: 2026-07-24
+pubDate: 2026-04-15
 heroImage: hero-knowing-doing-gap
 draft: false
 ---

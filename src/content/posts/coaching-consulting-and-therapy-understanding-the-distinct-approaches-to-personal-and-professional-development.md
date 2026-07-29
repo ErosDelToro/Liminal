@@ -1,7 +1,7 @@
 ---
 title: "Coaching, Consulting, and Therapy: How to Tell Which One You Actually Need"
 description: "Why coaching, consulting, and therapy overlap, how they still differ, and how to tell which one you actually need."
-pubDate: 2026-07-24
+pubDate: 2025-04-15
 heroImage: hero-coaching-consulting-therapy
 draft: false
 ---

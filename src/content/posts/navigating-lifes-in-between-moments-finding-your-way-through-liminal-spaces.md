@@ -1,7 +1,7 @@
 ---
 title: "Navigating Life's In-Between Moments: Finding Your Way Through Liminal Spaces"
 description: "Why the in-between stretches of a transition feel so disorienting, and how to move through them well."
-pubDate: 2026-07-24
+pubDate: 2026-01-15
 heroImage: hero-liminal-spaces
 draft: false
 ---

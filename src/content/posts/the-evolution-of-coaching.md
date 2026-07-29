@@ -1,7 +1,7 @@
 ---
 title: "The Evolution of Coaching: Why the Best Coaches Stopped Giving Answers"
 description: "How coaching evolved from the sideline whistle into something that draws the answers out of you, and why that shift matters."
-pubDate: 2026-07-24
+pubDate: 2025-07-15
 heroImage: hero-evolution-coaching
 draft: false
 ---

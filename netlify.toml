@@ -60,9 +60,11 @@
   to = "/blog"
   status = 301
 
+# Renamed: this post is "The Evolution of Coaching" and now lives at a matching
+# slug. Forward the old Webflow slug straight to the article, not the blog index.
 [[redirects]]
   from = "/post/effective-communication-building-stronger-teams-and-relationships"
-  to = "/blog"
+  to = "/post/the-evolution-of-coaching"
   status = 301
 
 [[redirects]]

@@ -17,7 +17,9 @@ export const CONTACT_EMAIL = "hello@liminal.coach";
 // Public profiles used for the "sameAs" entity signal in structured data
 // (JSON-LD). Add full profile URLs (LinkedIn, Instagram, etc.) and they flow
 // into the site's Person/Organization schema automatically. Empty = omitted.
-export const SOCIAL_LINKS: string[] = [];
+export const SOCIAL_LINKS: string[] = [
+  "https://www.linkedin.com/in/moutahir/",
+];
 
 // One tagline, reused in the footer and meta description base.
 export const SITE_TAGLINE =

@@ -31,8 +31,7 @@ features:
       and how teams actually work together.
   - title: Cultural change
     description: >-
-      Workshops designed to shift culture in a lasting way, not just for the
-      afternoon they are delivered.
+      Workshops designed to shift culture in a lasting way.
   - title: Expert facilitation
     description: >-
       Developed with subject matter experts and delivered by experienced

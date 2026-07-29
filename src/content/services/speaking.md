@@ -35,8 +35,7 @@ features:
       through story and lived experience.
   - title: Practical takeaways
     description: >-
-      Audiences leave with real strategies they can apply, not just a good
-      feeling in the room.
+      Audiences leave with real strategies they can apply.
   - title: Tailored to your audience
     description: >-
       Content is shaped to your people and your goals, from tone to examples to

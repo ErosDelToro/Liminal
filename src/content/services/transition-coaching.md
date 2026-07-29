@@ -24,7 +24,7 @@ features:
   - title: Naming what you're leaving behind
     description: >-
       Every transition asks you to let go of an old identity. We make that loss
-      conscious and workable, instead of something that quietly holds you back.
+      conscious and workable.
   - title: Redefining success on your terms
     description: >-
       We question the definitions of success you inherited and replace them with

@@ -36,7 +36,7 @@ features:
   - title: Continuous learning and reflection
     description: >-
       We build habits of self-reflection that turn everyday experience into
-      ongoing growth instead of repeated patterns.
+      ongoing growth.
   - title: Building positive cultures
     description: >-
       We focus on the behaviours that create psychological safety and team

@@ -32,3 +32,7 @@ webflow-export/
 # Internal writing workspace (drafts, style guide, ideas, editorial notes) —
 # local source of truth for the blog posts; never committed or deployed.
 /Coaching Articles/
+
+# Raw retreat photos (full-res originals). Optimized copies live in
+# src/assets/images; these masters stay local and out of the repo.
+/Liminal Retreat Photos/

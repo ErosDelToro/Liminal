@@ -46,6 +46,8 @@ const retreats = defineCollection({
     // location renders as a link.
     venueUrl: z.string().optional(),
     dates: z.string().optional(),
+    // Vimeo video id (numbers only) for an optional embedded trailer.
+    vimeoId: z.string().optional(),
     heroImage: z.string().optional(),
     // Attribution for a licensed hero photo (e.g. CC-BY). Rendered as a small
     // caption under the image.
@@ -92,7 +94,12 @@ const fieldnotes = defineCollection({
     teaser: z.string(),
     // Retreat slugs this note belongs to (drives the teaser + back-links).
     relatedRetreats: z.array(z.string()).default([]),
+    // Lead image (basename in src/assets/images), shown at the top of the note.
     heroImage: z.string().optional(),
+    // Optional photo gallery: basenames in src/assets/images, with captions.
+    images: z
+      .array(z.object({ src: z.string(), caption: z.string().optional() }))
+      .default([]),
     draft: z.boolean().default(false),
   }),
 });

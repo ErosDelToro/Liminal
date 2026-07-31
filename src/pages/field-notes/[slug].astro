@@ -1,7 +1,9 @@
 ---
 import { getCollection, render } from "astro:content";
+import { Image } from "astro:assets";
 import Base from "../../layouts/Base.astro";
 import BookButton from "../../components/BookButton.astro";
+import { getImage } from "../../lib/images";
 
 export async function getStaticPaths() {
   const notes = (await getCollection("fieldnotes")).filter((n) => !n.data.draft);
@@ -20,6 +22,21 @@ const { Content } = await render(entry);
 const related = data.relatedRetreats
   .map((slug) => retreats.find((r) => r.id === slug))
   .filter(Boolean);
+
+// Lead image + gallery.
+const hero = data.heroImage ? getImage(data.heroImage) : undefined;
+const gallery = data.images
+  .map((img) => ({
+    ...img,
+    image: getImage(img.src),
+    // Break the caption into sentences so each sits on its own line.
+    lines: img.caption
+      ? img.caption
+          .split(/\.\s+/)
+          .map((s, i, arr) => (i < arr.length - 1 ? `${s}.` : s))
+      : [],
+  }))
+  .filter((img) => img.image);
 
 const origin = (Astro.site ?? new URL(Astro.url.origin)).href.replace(/\/$/, "");
 const noteUrl = `${origin}/field-notes/${entry.id}`;
@@ -64,12 +81,78 @@ const schema = [
     <p class="mt-5 text-lg text-ink-soft">{data.dek}</p>
     <p class="mt-6 font-heading text-sm text-ink">By Mehdi Moutahir</p>
 
+    {
+      hero && (
+        <Image
+          src={hero}
+          alt={data.title}
+          class="mt-10 aspect-[16/9] w-full rounded-2xl object-cover shadow-sm"
+          widths={[600, 1000, 1400]}
+          sizes="(max-width: 768px) 100vw, 768px"
+          loading="eager"
+        />
+      )
+    }
+
     <div
-      class="prose mt-12 max-w-none text-ink-soft [&_a]:text-apricot [&_a]:underline [&_a]:underline-offset-2 [&_blockquote]:my-6 [&_blockquote]:border-l-2 [&_blockquote]:border-apricot [&_blockquote]:pl-5 [&_blockquote]:text-ink [&_em]:text-blueberry [&_h2]:mt-12 [&_h2]:mb-3 [&_h2]:text-2xl [&_h2]:text-ink [&_h3]:mt-9 [&_h3]:mb-2 [&_h3]:text-xl [&_h3]:text-ink [&_hr]:my-10 [&_hr]:border-line [&_p]:mt-4 [&_p]:leading-relaxed [&_strong]:text-ink"
+      class="prose mt-12 max-w-none text-ink-soft [&_a]:text-apricot [&_a]:underline [&_a]:underline-offset-2 [&_blockquote]:my-6 [&_blockquote]:border-l-2 [&_blockquote]:border-apricot [&_blockquote]:pl-5 [&_blockquote]:text-ink [&_em]:text-blueberry [&_h2]:mt-12 [&_h2]:mb-3 [&_h2]:text-2xl [&_h2]:text-ink [&_h3]:mt-9 [&_h3]:mb-2 [&_h3]:text-xl [&_h3]:text-ink [&_hr]:my-10 [&_hr]:border-line [&_img]:mt-8 [&_img]:w-full [&_img]:rounded-2xl [&_p]:mt-4 [&_p]:leading-relaxed [&_strong]:text-ink"
     >
       <Content />
     </div>
   </article>
+
+  <!-- Photo gallery: click-through carousel -->
+  {
+    gallery.length > 0 && (
+      <section class="mx-auto max-w-4xl px-6 pt-16">
+        <p class="eyebrow text-blueberry">From the journey</p>
+        <div class="relative mt-6">
+          <button
+            type="button"
+            data-carousel-prev
+            aria-label="Previous photo"
+            class="absolute left-2 top-[180px] z-10 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-line bg-paper/90 text-ink shadow-md backdrop-blur transition-colors hover:border-apricot hover:text-apricot sm:top-[230px]"
+          >
+            <svg class="h-4 w-4" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M10 3L5 8l5 5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <button
+            type="button"
+            data-carousel-next
+            aria-label="Next photo"
+            class="absolute right-2 top-[180px] z-10 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-line bg-paper/90 text-ink shadow-md backdrop-blur transition-colors hover:border-apricot hover:text-apricot sm:top-[230px]"
+          >
+            <svg class="h-4 w-4" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M6 3l5 5-5 5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div
+            data-carousel
+            class="flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-smooth pb-2 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+          >
+          {gallery.map((g) => (
+            <figure class="shrink-0 snap-center">
+              <Image
+                src={g.image}
+                alt={g.caption ?? data.title}
+                class="h-[360px] w-auto max-w-none rounded-2xl object-cover sm:h-[460px]"
+                widths={[600, 1000]}
+                sizes="(max-width: 640px) 90vw, 640px"
+              />
+              {g.lines.length > 0 && (
+                <figcaption class="mt-2 w-0 min-w-full text-sm text-blueberry">
+                  {g.lines.map((line, i) => (
+                    <>
+                      {i > 0 && <br />}
+                      {line}
+                    </>
+                  ))}
+                </figcaption>
+              )}
+            </figure>
+          ))}
+          </div>
+        </div>
+      </section>
+    )
+  }
 
   <!-- Back to the related retreats -->
   {
@@ -108,4 +191,20 @@ const schema = [
       </div>
     </div>
   </section>
+
+  <script>
+    document.querySelectorAll("[data-carousel]").forEach((track) => {
+      const section = track.closest("section");
+      const step = () => {
+        const first = track.firstElementChild as HTMLElement | null;
+        return first ? first.getBoundingClientRect().width + 16 : (track as HTMLElement).clientWidth;
+      };
+      section?.querySelector("[data-carousel-prev]")?.addEventListener("click", () =>
+        track.scrollBy({ left: -step(), behavior: "smooth" }),
+      );
+      section?.querySelector("[data-carousel-next]")?.addEventListener("click", () =>
+        track.scrollBy({ left: step(), behavior: "smooth" }),
+      );
+    });
+  </script>
 </Base>

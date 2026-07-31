@@ -5,8 +5,7 @@ import { Image } from "astro:assets";
 import { getImage } from "../lib/images";
 
 const portrait = getImage("mehdi-portrait");
-const img1 = getImage("coaching-session-1");
-const img2 = getImage("coaching-session-2");
+const fieldNoteImg = getImage("fieldnote-ascent-castor");
 
 // Mehdi's methodology pillars, from the live About page.
 const pillars = [
@@ -99,34 +98,47 @@ const pillars = [
   </section>
 
   <!-- Twenty years band -->
-  <section class="mx-auto max-w-6xl px-6 py-20">
-    <div class="grid items-center gap-12 lg:grid-cols-2">
-      <div class="order-2 lg:order-1">
-        <h2 class="text-3xl">Two decades, four countries, one throughline</h2>
-        <p class="mt-6 text-ink-soft">
-          Across twenty years of professional work spanning Morocco, Sweden,
-          France, and the United States, one question has stayed with me: what
-          allows a person to move through profound change and come out more
-          themselves, not less? That question is at the heart of how I work.
-        </p>
-      </div>
-      <div class="order-1 grid grid-cols-2 gap-4 lg:order-2">
-        {img1 && <Image src={img1} alt="" class="w-full rounded-xl object-cover" widths={[300, 600]} sizes="250px" />}
-        {img2 && <Image src={img2} alt="" class="mt-8 w-full rounded-xl object-cover" widths={[300, 600]} sizes="250px" />}
-      </div>
-    </div>
+  <section class="mx-auto max-w-3xl px-6 py-20">
+    <h2 class="text-3xl">Two decades, four countries, one throughline</h2>
+    <p class="mt-6 text-ink-soft">
+      Across twenty years of professional work spanning Morocco, Sweden, France,
+      and the United States, one question has stayed with me: what allows a
+      person to move through profound change and come out more themselves? That
+      question is at the heart of how I work.
+    </p>
   </section>
 
   <!-- Field note: where the work comes from -->
-  <section class="mx-auto max-w-6xl px-6 pb-4">
+  <section class="mx-auto max-w-3xl px-6 pb-8">
     <a
       href="/field-notes/the-liminal-odyssey"
-      class="inline-flex items-center gap-2 font-heading font-medium text-ink underline decoration-1 underline-offset-4 hover:text-apricot"
+      class="group grid overflow-hidden rounded-2xl border border-line bg-paper-warm/40 transition-shadow hover:shadow-md sm:grid-cols-2"
     >
-      A field note on where this work comes from: the first Liminal Odyssey
-      <svg class="h-4 w-4" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-        <path d="M4 12L12 4M12 4H5M12 4V11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-      </svg>
+      {
+        fieldNoteImg && (
+          <Image
+            src={fieldNoteImg}
+            alt="Mehdi on the summit of Castor, ice axe raised"
+            class="h-full min-h-44 w-full object-cover"
+            widths={[400, 800]}
+            sizes="(max-width: 640px) 100vw, 340px"
+          />
+        )
+      }
+      <div class="flex flex-col justify-center p-6 md:p-8">
+        <p class="eyebrow text-blueberry">Field note</p>
+        <h3 class="mt-2 text-2xl text-ink group-hover:text-apricot">Where this work comes from</h3>
+        <p class="mt-3 text-ink-soft">
+          A personal reflection on the first Liminal Odyssey and the year that
+          followed it into the mountains.
+        </p>
+        <span class="mt-4 inline-flex items-center gap-2 font-heading font-medium text-apricot">
+          Read the field note
+          <svg class="h-4 w-4" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <path d="M4 12L12 4M12 4H5M12 4V11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </span>
+      </div>
     </a>
   </section>
 

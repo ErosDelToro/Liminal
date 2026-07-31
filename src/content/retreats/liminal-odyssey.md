@@ -9,6 +9,7 @@ intro: >-
   and the chapter you are ready to begin.
 location: Greece
 dates: ""
+vimeoId: "1214627996"
 heroImage: retreat-greece
 seoTitle: Liminal Odyssey Retreat | Liminal Coaching
 seoDescription: >-
@@ -25,7 +26,8 @@ highlights:
     description: >-
       You move through the settings where Homer, the tragedians, and the early
       philosophers worked. The old stories of departure, trial, and return are
-      not abstract here. They are underfoot.
+      underfoot here. You cross the same seas and ground that first gave them
+      shape.
   - title: The hero's journey as structure
     description: >-
       The classical arc of leaving, being tested, and returning gives shape to

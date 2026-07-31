@@ -77,4 +77,24 @@ const posts = defineCollection({
   }),
 });
 
-export const collections = { services, retreats, posts };
+// Field notes -- long-form personal essays tied to specific retreats. Kept out
+// of the blog feed on purpose; each is surfaced from the retreat page(s) it
+// relates to via `relatedRetreats` (retreat slugs).
+const fieldnotes = defineCollection({
+  loader: glob({ pattern: "*.md", base: "./src/content/fieldnotes" }),
+  schema: z.object({
+    title: z.string(),
+    // Subtitle / standfirst under the title on the full-essay page.
+    dek: z.string(),
+    // The teaser shown in full on the related retreat page(s). Multi-paragraph;
+    // paragraphs are split on blank lines. Ends with the hook that leads into
+    // "Read the full story".
+    teaser: z.string(),
+    // Retreat slugs this note belongs to (drives the teaser + back-links).
+    relatedRetreats: z.array(z.string()).default([]),
+    heroImage: z.string().optional(),
+    draft: z.boolean().default(false),
+  }),
+});
+
+export const collections = { services, retreats, posts, fieldnotes };

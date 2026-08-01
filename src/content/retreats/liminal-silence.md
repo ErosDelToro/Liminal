@@ -53,5 +53,3 @@ connected part of something immense.
 
 The two halves work together. The silence quiets the noise inside; the night sky
 reminds you how large the world you are quiet within actually is.
-
-_Dates for the next Merzouga retreat to be confirmed._

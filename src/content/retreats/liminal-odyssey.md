@@ -47,5 +47,4 @@ meet what the passage asks of you, and come back changed. Between the sailing,
 the sites, and daily coaching, the sea and the myth become a way to examine the
 life you have been living and to commit to the one you want next.
 
-_The first Odyssey sailed the Greek seas in summer 2024. Dates for the next
-voyage to be confirmed._
+_The first Odyssey sailed the Greek seas in summer 2024._

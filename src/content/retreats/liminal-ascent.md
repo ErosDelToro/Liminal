@@ -46,5 +46,3 @@ The reason for the effort is embodiment. Insight that stays stuck in your head
 often arrives in the body instead, at altitude and past the point of comfort.
 What you take home is not a result to report, but a clearer, first-hand sense of
 how you meet difficulty when it is genuinely hard.
-
-_Dates for the next Zermatt retreat to be confirmed._

@@ -12,8 +12,14 @@ const services = defineCollection({
     // Short hero sentence under the title.
     intro: z.string(),
     // The six key-point features. Retreats uses these too (its six pillars).
-    features: z
-      .array(z.object({ title: z.string(), description: z.string() })),
+    // A feature may carry an optional "read more" link to a related post.
+    features: z.array(
+      z.object({
+        title: z.string(),
+        description: z.string(),
+        readMore: z.object({ label: z.string(), href: z.string() }).optional(),
+      }),
+    ),
     // Optional "Approach" section -- the 4 coaching pages have it, retreats
     // does not. When present the markdown body renders as its prose.
     approach: z

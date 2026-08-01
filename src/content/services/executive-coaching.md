@@ -2,9 +2,9 @@
 title: Executive Coaching
 order: 2
 intro: >-
-  Coaching that pairs managerial strategy with psychological insight to develop
-  how you lead. The focus is emotional intelligence, communication, and aligning
-  your values with your role.
+  For leaders serious about developing how they lead. We work in practice on
+  emotional intelligence, communication, and decision-making, so your values and
+  your role move in the same direction, and your teams feel it.
 keypointsImage: coaching-8902456
 approach:
   heading: How we develop your leadership
@@ -13,34 +13,34 @@ approachImages:
   - coaching-8901472
 seoTitle: Executive Coaching | Liminal Coaching
 seoDescription: >-
-  Executive coaching pairing managerial strategy and psychology to build
-  emotional intelligence, communication, and value-aligned leadership.
-draftCopy: true
+  Executive coaching that develops how you lead, from emotional intelligence and
+  communication to decision-making, with your values and your role in alignment.
+draftCopy: false
 features:
   - title: Emotional intelligence
     description: >-
-      We deepen your awareness of yourself and others, the ground for leading
-      with empathy and staying composed under pressure.
+      We deepen your read on yourself and the people around you, the ground for
+      leading with empathy and staying composed when the stakes are high.
   - title: Communication that motivates
     description: >-
-      Using engagement theory and NLP, we sharpen how you speak, listen, and
-      align people, so your intent lands and your teams stay engaged.
+      We sharpen how you speak, listen, and bring people with you, so your intent
+      lands and your teams stay engaged.
   - title: Better decision-making
     description: >-
-      We build ways of thinking clearly under complexity, so your decisions are
-      both faster and sounder.
+      We build the habit of thinking clearly under complexity, so your calls come
+      faster and hold up better.
   - title: Values-aligned leadership
     description: >-
-      We align your personal values with your professional role, so your
-      leadership stays consistent, authentic, and sustainable.
+      We bring your values and your role into alignment, so your leadership holds
+      together under scrutiny and over time.
   - title: Continuous learning and reflection
     description: >-
-      We build habits of self-reflection that turn everyday experience into
-      ongoing growth.
+      We build habits of reflection that turn each week's experience into
+      deliberate growth.
   - title: Building positive cultures
     description: >-
-      We focus on the behaviours that create psychological safety and team
-      development, so you leave a culture better than you found it.
+      We work on the behaviours that build psychological safety, so the culture
+      you shape is one people want to stay in.
 ---
 
 Executive development is personal work with professional stakes. We start with
@@ -49,5 +49,5 @@ stretch you. From there we build with candour and care.
 
 Grounded in managerial strategy, organizational psychology, and practical
 communication tools, our sessions create space to reflect, practise, and grow.
-The result is a truer, more confident version of your own leadership, one that
+The result is a clearer, more confident version of your leadership, one that
 motivates teams and shapes cultures people want to be part of.

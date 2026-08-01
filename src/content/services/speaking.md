@@ -2,9 +2,10 @@
 title: Speaking
 order: 3
 intro: >-
-  I speak at conferences, corporate events, and workshops, combining research
-  with real-world experience. My talks are practical and grounded, and they
-  leave an audience something to actually use.
+  I speak at conferences, corporate events, and workshops on change, identity,
+  and how people move through transition. The talks pair research with lived
+  experience, and they send an audience home with something they can use on
+  Monday.
 keypointsImage: coaching-8902332
 approach:
   heading: What my talks look like
@@ -13,9 +14,10 @@ approachImages:
   - coaching-8902364
 seoTitle: Speaking | Liminal Coaching
 seoDescription: >-
-  Book Mehdi Moutahir to speak. Grounded talks that combine research with
-  real-world experience and leave an audience something to actually use.
-draftCopy: true
+  Book Mehdi Moutahir to speak on change, identity, and transition. Talks that
+  pair research with lived experience and send an audience home with something
+  to use.
+draftCopy: false
 features:
   - title: Conferences
     description: >-
@@ -23,23 +25,23 @@ features:
       clear sense of what to do differently.
   - title: Corporate meetings
     description: >-
-      Sessions built around the moment your organization is in, whether that is
-      change, growth, or renewal, with language and tools to match.
+      Sessions built around the moment your organization is in, whether change,
+      growth, or renewal, with the language and tools to match.
   - title: Workshops and breakouts
     description: >-
-      Interactive talks that move beyond listening into practice, so the ideas
-      take root.
+      Interactive talks that turn listening into practice, so the ideas take
+      root.
   - title: Grounded in research
     description: >-
       Every talk is built on solid psychological research, then made human
       through story and lived experience.
   - title: Practical takeaways
     description: >-
-      Audiences leave with real strategies they can apply.
+      Audiences leave with strategies concrete enough to use the same week.
   - title: Tailored to your audience
     description: >-
       Content is shaped to your people and your goals, from tone to examples to
-      the change you are trying to create.
+      the change you want to create.
 ---
 
 Great talks do two things at once. They move a room, and they leave something

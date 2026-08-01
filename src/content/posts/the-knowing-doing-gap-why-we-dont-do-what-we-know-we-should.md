@@ -46,4 +46,4 @@ You know what you should do, and you cannot seem to do it. That is the exact sit
 
 The first conversation is free. We look at what is holding your gap open, and at the one small step present-you can actually afford this week. If it helps, we continue. If it does not, you will leave with a clearer picture than you arrived with.
 
-You were never going to close this by knowing more. You close it by making the next step small enough to take today, with someone there who makes the future feel real enough to act on.
+You were never going to close this by knowing more. You close it by making the next step small enough to take today, with someone there who makes the future feel concrete enough to act on.

@@ -11,7 +11,7 @@ const fieldNoteImg = getImage("fieldnote-ascent-castor");
 const pillars = [
   {
     title: "A global perspective",
-    body: "Born in Morocco, raised in Sweden, educated in France, and working across the United States. Two decades of life across cultures shapes how I understand leadership, adaptation, and what it takes for a person to change direction.",
+    body: "A life spent adapting to new cultures and languages trained me to notice the assumptions people don't know they carry. In coaching, that becomes an ear for the beliefs and filters quietly shaping a client's choices.",
   },
   {
     title: "The whole person",
@@ -35,7 +35,9 @@ const pillars = [
   <!-- Hero -->
   <section class="mx-auto max-w-6xl px-6 pt-16 md:pt-24">
     <p class="eyebrow">About</p>
-    <h1 class="mt-4 max-w-4xl">Strategic architect for bold transitions</h1>
+    <h1 class="mt-4 max-w-4xl">
+      Strategic architect for <span class="whitespace-nowrap"><span class="font-extrabold">bold</span> transitions</span>
+    </h1>
     <p class="mt-6 max-w-2xl text-lg text-ink-soft">
       I guide individuals and organizations through the liminal phases of
       transformation: those uncertain, in-between spaces where the old no longer
@@ -47,7 +49,7 @@ const pillars = [
 
   <!-- Intro + portrait -->
   <section class="mx-auto max-w-6xl px-6 py-16">
-    <div class="grid items-center gap-12 lg:grid-cols-2">
+    <div class="grid items-start gap-12 lg:grid-cols-2">
       {
         portrait && (
           <Image
@@ -63,9 +65,8 @@ const pillars = [
         <h2 class="text-3xl">Change is inevitable, but growth is intentional</h2>
         <div class="mt-6 space-y-4 text-ink-soft">
           <p>
-            I care deeply about living with purpose and intention. Drawing on my
-            experience in education, entrepreneurship, psychology, and personal
-            development, I guide people toward lives of genuine fulfilment.
+            I care deeply about living with purpose and intention, and my work is
+            guiding people toward lives of genuine fulfilment.
           </p>
           <p>
             Drawing on the Japanese idea of ikigai, I help clients bring their
@@ -75,6 +76,19 @@ const pillars = [
             sense of community.
           </p>
         </div>
+        <h2 class="mt-10 text-3xl">Four cultures, thirty countries, one throughline</h2>
+        <p class="mt-6 text-ink-soft">
+          I have lived inside four distinct cultures: Morocco and Sweden as a
+          child, France as a student, the United States as an adult. Each move
+          rearranged my assumptions and quietly rewrote my sense of who I was, so I
+          have known profound change from the inside, not from a textbook. A global
+          career has since carried me through more than thirty countries and a range
+          of fields, from academia to entrepreneurship to organizational
+          psychology. Through all of it, one question has stayed with me: what
+          allows a person to move through profound change and come out more
+          themselves? I have lived that question, and helping others cross it is
+          the work I do now.
+        </p>
       </div>
     </div>
   </section>
@@ -95,17 +109,6 @@ const pillars = [
         }
       </div>
     </div>
-  </section>
-
-  <!-- Twenty years band -->
-  <section class="mx-auto max-w-3xl px-6 py-20">
-    <h2 class="text-3xl">Two decades, four countries, one throughline</h2>
-    <p class="mt-6 text-ink-soft">
-      Across twenty years of professional work spanning Morocco, Sweden, France,
-      and the United States, one question has stayed with me: what allows a
-      person to move through profound change and come out more themselves? That
-      question is at the heart of how I work.
-    </p>
   </section>
 
   <!-- Field note: where the work comes from -->

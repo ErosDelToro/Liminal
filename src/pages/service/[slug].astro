@@ -32,12 +32,25 @@ const breadcrumb = {
     { "@type": "ListItem", position: 3, name: data.title, item: `${origin}/service/${entry.id}` },
   ],
 };
+
+// Service entity: this offering, provided by the Liminal Coaching org (resolved
+// by @id from the site-wide graph in Base.astro).
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: data.title,
+  serviceType: data.title,
+  description: data.seoDescription ?? data.intro,
+  url: `${origin}/service/${entry.id}`,
+  provider: { "@id": `${origin}/#org` },
+  areaServed: "Worldwide",
+};
 ---
 
 <Base
   title={data.seoTitle ?? `${data.title} | Liminal Coaching`}
   description={data.seoDescription}
-  schema={breadcrumb}
+  schema={[breadcrumb, serviceSchema]}
 >
   <!-- Hero -->
   <section class="mx-auto max-w-6xl px-6 pb-8 pt-16 md:pt-24">

@@ -57,11 +57,28 @@ const testimonials = [
     avatar: getImage("client-kilah"),
   },
 ];
+
+// Client testimonials as Review nodes on the practice entity (resolved by @id
+// from the site-wide graph in Base.astro). No aggregateRating: these quotes
+// carry no star values, and inventing them would be dishonest and, as
+// self-hosted reviews, ineligible for rich results anyway.
+const origin = (Astro.site ?? new URL(Astro.url.origin)).href.replace(/\/$/, "");
+const reviewSchema = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "@id": `${origin}/#org`,
+  review: testimonials.map((t) => ({
+    "@type": "Review",
+    reviewBody: t.quote,
+    author: { "@type": "Person", name: t.name },
+  })),
+};
 ---
 
 <Base
   title="Transition & Executive Coaching | Liminal Coaching"
-  description="Transition and executive coaching with Mehdi Moutahir — psychological insight and practical strategy to move through a career change, a new role, or a major crossroads."
+  description="Transition and executive coaching with Mehdi Moutahir: psychological insight and practical strategy to move through a career change, a new role, or a major crossroads."
+  schema={reviewSchema}
 >
   <!-- Hero -->
   <section class="mx-auto max-w-6xl px-6 pt-16 md:pt-24">

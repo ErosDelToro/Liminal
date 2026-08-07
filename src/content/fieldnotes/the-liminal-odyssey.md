@@ -15,20 +15,9 @@ teaser: |
   What was the sentence, and why did it undo everything I thought I knew?
 relatedRetreats:
   - liminal-odyssey
-  - liminal-ascent
 images:
   - src: fieldnote-odyssey-crew
     caption: Day 4 - Somewhere in Spetses, the Liminal Odyssey became less about the journey and more about who we were sharing it with.
-  - src: fieldnote-ascent-dawn
-    caption: Some mornings begin with coffee. Others begin roped together on a glacier.
-  - src: fieldnote-ascent-ridge
-    caption: Castor corniced ridge. The less ground beneath you, the more grounded you become.
-  - src: fieldnote-ascent-castor
-    caption: Castor - The summit isn't the end of the climb. It's the moment you understand why you started.
-  - src: fieldnote-summit-arms
-    caption: After the Breithorn traverse, nothing profound. Just profoundly grateful to be alive.
-  - src: fieldnote-ascent-race
-    caption: Some finish lines are crossed with your legs. Others with everything you have.
 draft: false
 ---
 

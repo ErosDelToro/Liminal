@@ -102,6 +102,8 @@ const fieldnotes = defineCollection({
     relatedRetreats: z.array(z.string()).default([]),
     // Lead image (basename in src/assets/images), shown at the top of the note.
     heroImage: z.string().optional(),
+    // Descriptive alt text for the hero image (falls back to the title if unset).
+    heroAlt: z.string().optional(),
     // Optional photo gallery: basenames in src/assets/images, with captions.
     images: z
       .array(z.object({ src: z.string(), caption: z.string().optional() }))

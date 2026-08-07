@@ -85,7 +85,7 @@ const schema = [
       hero && (
         <Image
           src={hero}
-          alt={data.title}
+          alt={data.heroAlt ?? data.title}
           class="mt-10 aspect-[16/9] w-full rounded-2xl object-cover shadow-sm"
           widths={[600, 1000, 1400]}
           sizes="(max-width: 768px) 100vw, 768px"

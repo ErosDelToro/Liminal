@@ -6,12 +6,8 @@ intro: >-
   that a chapter is ending. We work through it together so you come out coherent,
   your life, your values, and your choices back in alignment, and the next
   chapter yours to author.
-keypointsImage: coaching-8901687
 approach:
   heading: How we work through the change together
-approachImages:
-  - coaching-8901565
-  - coaching-8902148
 seoTitle: Transition Coaching | Liminal Coaching
 seoDescription: >-
   Transition coaching for adults at a threshold: a career change, a new role, or

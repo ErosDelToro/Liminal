@@ -6,12 +6,8 @@ intro: >-
   and how people move through transition. The talks pair research with lived
   experience, and they send an audience home with something they can use on
   Monday.
-keypointsImage: coaching-8902332
 approach:
   heading: What my talks look like
-approachImages:
-  - coaching-8901553
-  - coaching-8902364
 seoTitle: Speaking | Liminal Coaching
 seoDescription: >-
   Book Mehdi Moutahir to speak on change, identity, and transition. Talks that

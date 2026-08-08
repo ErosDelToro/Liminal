@@ -25,9 +25,6 @@ const services = defineCollection({
     approach: z
       .object({ heading: z.string() })
       .optional(),
-    // Image slugs (files in src/assets/images, without extension).
-    keypointsImage: z.string().optional(),
-    approachImages: z.array(z.string()).default([]),
     // SEO
     seoTitle: z.string().optional(),
     seoDescription: z.string(),

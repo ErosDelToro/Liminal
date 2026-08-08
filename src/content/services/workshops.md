@@ -5,12 +5,8 @@ intro: >-
   For an organization at a turning point, whether change, growth, or a culture
   that needs to shift. We design each workshop with you, shaped to your people
   and your goals, and built to hold long after the room clears.
-keypointsImage: coaching-8902141
 approach:
   heading: How we design your workshop
-approachImages:
-  - coaching-8901564
-  - coaching-8902147
 seoTitle: Workshops | Liminal Coaching
 seoDescription: >-
   Workshops for organizations at a turning point. Designed with you around your

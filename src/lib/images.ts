@@ -8,7 +8,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
   { eager: true },
 );
 
-/** Resolve a bare image slug (e.g. "coaching-8901687") to its ImageMetadata. */
+/** Resolve a bare image slug (e.g. "mehdi-portrait") to its ImageMetadata. */
 export function getImage(slug: string | undefined): ImageMetadata | undefined {
   if (!slug) return undefined;
   for (const path in images) {

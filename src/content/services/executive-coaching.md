@@ -5,12 +5,8 @@ intro: >-
   For leaders serious about developing how they lead. We work in practice on
   emotional intelligence, communication, and decision-making, so your values and
   your role move in the same direction, and your teams feel it.
-keypointsImage: coaching-8902456
 approach:
   heading: How we develop your leadership
-approachImages:
-  - coaching-8901434
-  - coaching-8901472
 seoTitle: Executive Coaching | Liminal Coaching
 seoDescription: >-
   Executive coaching that develops how you lead, from emotional intelligence and

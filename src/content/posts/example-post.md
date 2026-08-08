@@ -7,7 +7,7 @@
 title: "Example: How to write a post"
 description: "A short one- or two-sentence summary shown on the blog index and in search results."
 pubDate: 2026-01-01
-heroImage: coaching-session-1
+# heroImage: your-image-name   # optional; put the file in src/assets/images and reference it by filename without extension
 draft: true
 ---
 
